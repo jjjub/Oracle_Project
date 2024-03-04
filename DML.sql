@@ -1,7 +1,9 @@
 -- &연산자 삽입 가능 설정
 SET ESCAPE ON;
-
+set define off;
+COMMIT;
 select * from tblUser;
+
 --tblUser
 --학생
 INSERT INTO tblUser (userpk, role, name, bdate, tel, id, pw, regdate) VALUES ((SELECT NVL(MAX(userpk), 0) + 1 FROM tblUser), '학생', '성준희',TO_DATE('1995-03-15', 'YYYY-MM-DD'),  '01059006133',  'sungjun123', '2886781', SYSDATE );
@@ -240,6 +242,8 @@ INSERT INTO tblUser (userpk, role, name, bdate, tel, id, pw, regdate) VALUES ((S
 INSERT INTO tblUser (userpk, role, name, bdate, tel, id, pw, regdate) VALUES ((SELECT NVL(MAX(userpk), 0) + 1 FROM tblUser), '교사',  '고진수', TO_DATE('1972-05-21', 'YYYY-MM-DD'), '01084651357',  'real_water',  '1162656',  SYSDATE);
 INSERT INTO tblUser (userpk, role, name, bdate, tel, id, pw, regdate) VALUES ((SELECT NVL(MAX(userpk), 0) + 1 FROM tblUser), '교사',  '김시우', TO_DATE('1972-05-21', 'YYYY-MM-DD'), '01079642164',  'si_rain',  '1170858',  SYSDATE);
 INSERT INTO tblUser (userpk, role, name, bdate, tel, id, pw, regdate) VALUES ((SELECT NVL(MAX(userpk), 0) + 1 FROM tblUser), '교사',  '박정준', TO_DATE('1972-05-21', 'YYYY-MM-DD'), '01011324456',  'kind_jun',  '1032654',  SYSDATE);
+
+
 --tblTeacher
 Insert into tblTeacher (tpk, tstspk) values  (212, 2);
 Insert into tblTeacher (tpk, tstspk) values  (213, 1);
@@ -263,7 +267,7 @@ Insert into tblTeacher (tpk, tstspk) values  (230, 4);
 Insert into tblTeacher (tpk, tstspk) values  (231, 5);
 Insert into tblTeacher (tpk, tstspk) values  (232, 4);
 
-
+select * from tblUser;
 INSERT INTO tblStudent (stupk, stustspk) VALUES (1, 5);
 INSERT INTO tblStudent (stupk, stustspk) VALUES (2, 5);
 INSERT INTO tblStudent (stupk, stustspk) VALUES (3, 5);
@@ -470,15 +474,15 @@ INSERT INTO tblStudent (stupk, stustspk) VALUES (202, 1);
 --tblAdmin
 --INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT NVL(MAX(admpk), 0) + 1 FROM tblAdmin), 1);
 
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '모모심'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '임장잎'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '김수숭'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '추호초'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '남태구'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '변일준'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '임엽단'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '선상우'), );
-INSERT INTO tblAdmin (admpk) VALUES ((SELECT userpk FROM tblUser WHERE name = '전박솜'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '모모심'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '임장잎'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '김수숭'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '추호초'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '남태구'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '변일준'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '임엽단'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '선상우'), );
+INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '전박솜'), );
 
 --tblComLocation.
 ----select * from tblComLocation;
@@ -499,7 +503,7 @@ INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) 
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '제주특별자치도');
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '강원특별자치도');
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '전북특별자치도');
-
+select * from tblstudent;
 --tblAdminStatus;		INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '상태');
 --select * from tblAdminStatus;
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '재직');
@@ -516,7 +520,6 @@ INSERT INTO tblAttendStatus (attstspk, attstatus) VALUES ((SELECT NVL(MAX(attsts
 INSERT INTO tblAttendStatus (attstspk, attstatus) VALUES ((SELECT NVL(MAX(attstspk), 0) + 1 FROM tblAttendStatus), '병결(출석인정)');
 INSERT INTO tblAttendStatus (attstspk, attstatus) VALUES ((SELECT NVL(MAX(attstspk), 0) + 1 FROM tblAttendStatus), '면접(출석인정)');
 INSERT INTO tblAttendStatus (attstspk, attstatus) VALUES ((SELECT NVL(MAX(attstspk), 0) + 1 FROM tblAttendStatus), '시험(출석인정)');
-
 
 
 --tblOpenCourseStatus;		INSERT INTO tblOpenCourseStatus (ocspk, ocstatus) VALUES ((SELECT NVL(MAX(ocspk), 0) + 1 FROM tblOpenCourseStatus), '개설예정/과정진행중/과정종료');
@@ -1004,7 +1007,7 @@ INSERT INTO tblCourse (crspk, crsname, crsduration)
     
 --tblOpenCourse
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'ocname', TO_DATE('YYYY-MM-DD', 'regdate'), field, crspk, crpk, tpk, ocspk);														
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨1', '2024-01-02', 30, 1, 1, 212, 2);	
+INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨1', '2024-01-02', 24, 1, 1, 212, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨2', '2024-01-02', 30, 1, 2, 215, 2);
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '프론트엔드 웹 애플리케이션 개발자 코스1', '2022-06-27', 20, 5, 1, 219, 3);
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '프론트엔드 웹 애플리케이션 개발자 코스2', '2022-06-27', 20, 5, 3, 228, 3);		
@@ -1014,88 +1017,136 @@ INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '모바일 앱 개발 전문가 코스2', '2024-07-02', 30, 15, 2, 220, 1);		
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 5, 217, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 6, 218, 2);	
+select * from tblboard;
+
+select * from tblOpenCourse;
+
 
 --tblExamInfo
 --1,2 과정
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 10, 2, 1);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 10, 2, 2);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 20, 2, 1);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 20, 2, 2);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-20', 'examdate'), '실기', 10, 2, 1);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-20', 'examdate'), '실기', 10, 2, 2);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-03-04', 'examdate'), '실기', 20, 7, 1);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-03-04', 'examdate'), '실기', 20, 7, 2);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-05-02', 'examdate'), '실기', 20, 22, 1);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-05-02', 'examdate'), '실기', 20, 22, 2);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 20, 5, 1);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 20, 5, 2);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 10, 2, 1);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 10, 2, 2);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 20, 2, 1);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 20, 2, 2);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-20', '실기', 10, 13, 1);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-20', '실기', 10, 13, 2);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-03-04', '실기', 20, 14, 1);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-03-04', '실기', 20, 14, 2);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-05-02', '실기', 20, 26, 1);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-05-02', '실기', 20, 26, 2);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 20, 21, 1);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 20, 21, 2);
+
+--3과정
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2022-07-02', '필기', 10, 2, 3);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2022-08-20', '실기', 10, 2, 3);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2022-09-04', '실기', 20, 7, 3);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2022-10-02', '실기', 20, 22, 3);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2022-11-02', '필기', 20, 5, 3);
+
+--4과정
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2022-07-02', '필기', 10, 2, 4);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-08-20', '필기', 20, 2, 4);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-09-04', '실기', 10, 7, 4);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-10-02', '실기', 20, 22, 4);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-11-02', '실기', 20, 5, 4);
+
+--5,6과정
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-01-02', '필기', 10, 4, 5);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 10, 4, 5);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-03-04', '필기', 10, 3, 5);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-04-10', '실기', 30, 3, 5);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-01-02', '필기', 10, 4, 6);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-02-02', '필기', 10, 4, 6);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-03-04', '필기', 10, 3, 6);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-04-10', '실기', 30, 3, 6);
+
+--7,8과정
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-08-02', '필기', 10, 2, 7);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-09-02', '필기', 10, 8, 7);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-10-04', '실기', 20, 26, 7);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-11-10', '실기', 20, 13, 7);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-08-02', '필기', 10, 2, 8);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-09-02', '필기', 10, 8, 8);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-10-04', '필기', 20, 26, 8);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-11-10', '실기', 20, 26, 8);
+
+-- 9,10과정
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-03-11', '필기', 10, 5, 9);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-04-11', '필기', 10, 18, 9);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-05-10', '실기', 20, 18, 9);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-06-10', '실기', 20, 6, 9);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-03-11', '필기', 10, 5, 10);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-04-11', '필기', 10, 18, 10);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-05-10', '필기', 20, 18, 10);
+INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-06-10', '실기', 20, 6, 10);
 
 
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 10, , 3);
-INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), TO_DATE('2024-02-02', 'examdate'), '필기', 10, 22, 4);
-
-
-select * from tblsubject;
+select * from tbluser;
+select * from tblboard;
+select * from tblSubject;
+select * from tblOpenCourse;
+select  e.exinfopk, s.subname, e.examtype, o.ocname, e.wt from tblExamInfo e inner join tblOpenCourse o on e.ocpk = o.ocpk inner join tblSubject s on e.subpk = s.subpk order by exinfopk asc ;
 --tblExam
-INSERT INTO tblExam (expk, exam, eipk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바의 예약어가 아닌 것은 무엇입니까?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
+    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바의 예약어가 아닌 것은 무엇입니까?', 1);
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 사용되는 기본 데이터 타입이 아닌 것은 무엇입니까?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 "==" 연산자는 무엇을 비교합니까?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
+    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 2);
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '딥러닝에서 "과적합(Overfitting)"이란 무엇이며, 어떻게 방지할 수 있나요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'CNN(Convolutional Neural Network)에서 합성곱 층(Convolutional Layer)과 풀링 층(Pooling Layer)의 역할에 대해 설명하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'RNN(Recurrent Neural Network)과 LSTM(Long Short-Term Memory)의 차이점은 무엇이며, 각각의 장단점은 무엇인가요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자기 지도 학습(Self-supervised Learning)이란 무엇이며, 자기 지도 학습을 활용한 딥러닝 알고리즘의 예시를 제시하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '생성적 적대 신경망(GAN, Generative Adversarial Network)의 작동 원리를 설명하고, GAN이 사용되는 영역 중 하나를 예시로 들어보세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클에서 인덱스(Index)의 역할과 사용 이유에 대해 설명하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'PL/SQL이란 무엇이며, 어떻게 사용되는지 간단히 설명하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클에서 트랜잭션(Transaction)의 개념과 ACID 특성에 대해 설명하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클에서 뷰(View)의 역할과 장점을 설명하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클에서 외부키(Foreign Key)의 역할과 사용 이유에 대해 설명하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Promise와 async/await의 차이점은 무엇인가요? 각각의 장단점은 무엇인가요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''이벤트 위임(Event Delegation)''이란 무엇이며, 어떻게 사용되나요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''호이스팅(Hoisting)''이란 무엇이며, 어떻게 작동하나요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'ES6의 중요한 기능 중 하나를 선택하여 설명하고, 예시를 제시하세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '파이썬에서의 리스트(list)와 튜플(tuple)의 차이점은 무엇인가요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '파이썬에서의 제너레이터(generator)란 무엇이며, 어떻게 사용되나요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '파이썬에서의 예외 처리(exception handling) 방법에는 어떤 것들이 있나요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '파이썬에서 클래스(class)와 인스턴스(instance)의 관계를 설명해주세요.', 숫자);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '파이썬의 가상환경(virtual environment)이란 무엇이며, 어떻게 사용하나요?', 숫자);
-INSERT INTO tblExam (expk, exam, eipk)   
+INSERT INTO tblExam (expk, exam, exinfopk)   
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins란 무엇이며, 어떻게 사용되나요?', 1);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins에서 파이프라인(pipeline)이란 무엇이며, 어떻게 작동하나요?', 1);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins에서 빌드(build)와 배포(deploy)의 차이점은 무엇인가요?', 1);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins에서 사용되는 워크스페이스(workspace)란 무엇이며, 어떻게 활용하나요?', 1);
-INSERT INTO tblExam (expk, exam, eipk) 
+INSERT INTO tblExam (expk, exam, exinfopk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins에서 빌드 파라미터(build parameters)가 무엇이며, 어떻게 설정하나요?', 1);
