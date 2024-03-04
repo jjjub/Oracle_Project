@@ -1171,3 +1171,28 @@ INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((
 INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대그린푸드', 2, 6, 1, 3);
 INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화솔루션', 1, 5, 11, 4);
 
+
+--tblBoard
+--자유
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('YYYY-MM-DD', '2023-12-16'), '다들 힘내세요', '비전공자였지만 열심히 정처기 따고 공부해서 이번에 취업했습니다. 다들 파이팅', 1);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('YYYY-MM-DD', '2023-10-17'), '학원 근처 맛집 추천', '5분 거리에 있는 칼국수 집 맛있어요 드셔보시길', 17);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('YYYY-MM-DD', '2024-03-01'), '휴게실에 에어팟 두고 가신 분', '하늘색 케이스 에어팟 주인분 상담실에 놔뒀으니 가져가세요', 75);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('YYYY-MM-DD', '2023-07-21'), '키보드 추천해주실분 계신가요', '사무용만 쓰다가 이제는 사야겠다싶어서.. 추천해주실분', 49);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('YYYY-MM-DD', '2023-05-05'), '자바 너무 어렵네요', '문제푸는 것도 어려운데 프로젝트 들어가니까 정말 뭐가 뭔지 모르겠어요 열심히해야겠어요', 30);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('YYYY-MM-DD', '2023-09-28'), '취업상담 받아보신분 계신가요', '받아보고싶은데 어떤 분위기인지 궁금해서요', 55);
+--질문
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-11-01'), '훈련장려금 관련 질문', '안녕하세요 이번에 수강하게 되었는데 훈련장려금을 따로 지원 받을 수 있을까요? 신청 방법이 따로 있다면 알려주세요', 14);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-04-16'), '교재는 지급 되나요?', '수업에 사용하는 교재를 사가야하는지, 학원에서 준다면 금액이 얼마인지 알려주세요', 33);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2022-06-13'), '수강신청을 어떻게 하나요', '따로 강좌를 신청해야하나요?', 2);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2024-02-01'), '재취업지원 신청 방법 궁금합니다', '쌍용교육센터에서 국비지원수업 수료 후 취업했습니다. 1년 근무하고 퇴사했는데 재취업을 지원해준다고 봐서 신청 방법 궁금합니다.', 69);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-03-09'), '취업지원은 어떻게 진행되나요?', '자소서랑 면접도 도와주시나요?', 51);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2024-01-16'), '훈련생 선발 기준', '면접을 보고 들어간다고 알고있는데 훈련생 선발 기준이 있을까요? 비전공자인데 전공자를 우선하는지, 학벌도 보는 지 궁금하여 질문 남깁니다.', 38);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-09-19'), '수강중에 취업하면 수료할 수 없나요?', '근무시간과 수업시간이 안겹치면 취업 후에도 수업을 계속 들을 수 있나요?', 23);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2021-12-04'), '국민내일배움카드 관련', '개강일자 이후에 카드가 발급될 것 같은데 수강 불가한가요', 80);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2022-07-10'), '수업 두 번 수강할 수 있나요?', '쌍용교육센터에서 국비지원교육을 수료했는데 부족함을 느껴 다시 한 번 듣고싶습니다. 가능한가요?', 17);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-09-24'), '국민내일배움카드 지원한도는 얼마인가요?', '제가 전에 국민내일배움카드로 단과학원을 수료했는데 전액 지원 가능한 지, 자비 부담 없는 지 궁금합니다', 29);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-05-29'), '국민내일배움카드 만료', '국민내일배움카드 계좌사용의 유효기간이 끝났는데 이 계좌카드로 훈련비 지원 받을 수 업을까요', 78);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2022-04-25'), '연령 제한이 있을까요', '코딩에 관심을 가지게 되었는데 나이가 있어서 연령제한 있는지 궁금합니다', 42);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('YYYY-MM-DD', '2023-10-30'), '예습을 안하면 따라가기 어려울까요', '비전공자입니다. 갑자기 수강하게되어서 예습할 시간이 없는데 수업 따라가기 어려울까요?', 42);
+
+
