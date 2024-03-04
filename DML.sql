@@ -6785,3 +6785,59 @@ INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELE
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '임명윤', '911123-1383228', '01024173832', 'P', 10);
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '권명원', '900924-1736658', '01005469250', 'P', 10);
 
+--tblItrsCompany
+select * from tblItrsCompany;
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (24, 86);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (14, 4);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (50, 101);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (3, 183);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (42, 37);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (65, 129);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (8, 74);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (30, 191);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (17, 55);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (56, 18);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (21, 92);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (10, 143);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (47, 9);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (34, 177);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (62, 63);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (15, 38);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (29, 104);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (49, 125);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (2, 198);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (37, 42);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (11, 71);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (43, 182);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (58, 14);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (6, 99);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (6, 2);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (26, 25);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (5, 172);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (38, 60);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (23, 127);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (48, 2);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (9, 185);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (33, 76);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (64, 12);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (16, 154);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (51, 94);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (36, 31);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (19, 171);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (44, 80);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (57, 106);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (7, 3);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (28, 190);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (55, 69);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (40, 115);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (22, 43);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (59, 168);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (13, 47);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (46, 122);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (32, 10);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (68, 147);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (1, 115);
+INSERT INTO tblItrsCompany (compk, stupk) VALUES (69, 34);
+
+
+
