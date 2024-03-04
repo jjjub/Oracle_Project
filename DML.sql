@@ -1,6 +1,7 @@
 -- &연산자 삽입 가능 설정
 SET ESCAPE ON;
 
+select * from tblUser;
 --tblUser
 --학생
 INSERT INTO tblUser (userpk, role, name, bdate, tel, id, pw, regdate) VALUES ((SELECT NVL(MAX(userpk), 0) + 1 FROM tblUser), '학생', '성준희',TO_DATE('1995-03-15', 'YYYY-MM-DD'),  '01059006133',  'sungjun123', '2886781', SYSDATE );
