@@ -475,7 +475,7 @@ update  tblUser set name ='권태윤' where userpk = 229;
 update  tblUser set name ='한하민' where userpk = 230;	
 update  tblUser set name ='이다우' where userpk = 231;	
 update  tblUser set name ='권다혜' where userpk = 232;	
->>>>>>> upstream/main
+
 --tblTeacher
 Insert into tblTeacher (tpk, tstspk) values  (212, 2);
 Insert into tblTeacher (tpk, tstspk) values  (213, 1);
