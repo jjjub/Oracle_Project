@@ -7257,5 +7257,46 @@ INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 F
 
 
 
+--tblOnGoingSubject
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 1, 7);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 2, 7);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 5, 4);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 6, 4);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 9, 2);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 10, 2);
+
+
+
+--tblConsulting
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-30', 'YYYY-MM-DD'), '중도포기', 219, 56);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-07-01', 'YYYY-MM-DD'), '중도포기', 219, 59);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-12', 'YYYY-MM-DD'), '진로상담', 219, 54);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-15', 'YYYY-MM-DD'), '진로상담', 219, 57);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-19', 'YYYY-MM-DD'), '진로상담', 219, 58);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-22', 'YYYY-MM-DD'), '진로상담', 219, 60);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-08', 'YYYY-MM-DD'), '진로상담', 219, 61);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-24', 'YYYY-MM-DD'), '진로상담', 219, 63);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-27', 'YYYY-MM-DD'), '진로상담', 219, 64);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-12', 'YYYY-MM-DD'), '진로상담', 219, 65);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-12', 'YYYY-MM-DD'), '진로상담', 219, 67);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-11', 'YYYY-MM-DD'), '진로상담', 219, 68);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-31', 'YYYY-MM-DD'), '진로상담', 219, 69);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-11', 'YYYY-MM-DD'), '진로상담', 219, 70);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-17', 'YYYY-MM-DD'), '진로상담', 219, 71);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-01', 'YYYY-MM-DD'), '진로상담', 219, 73);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-07', 'YYYY-MM-DD'), '진로상담', 219, 74);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-24', 'YYYY-MM-DD'), '진로상담', 228, 77);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-20', 'YYYY-MM-DD'), '진로상담', 228, 79);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-08', 'YYYY-MM-DD'), '진로상담', 228, 80);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-08', 'YYYY-MM-DD'), '진로상담', 228, 81);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-08', 'YYYY-MM-DD'), '진로상담', 228, 83);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-27', 'YYYY-MM-DD'), '진로상담', 228, 84);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-15', 'YYYY-MM-DD'), '진로상담', 228, 86);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-09', 'YYYY-MM-DD'), '진로상담', 228, 87);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-06', 'YYYY-MM-DD'), '진로상담', 228, 89);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-04', 'YYYY-MM-DD'), '진로상담', 228, 90);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-27', 'YYYY-MM-DD'), '중도포기', 228, 88);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-29', 'YYYY-MM-DD'), '중도포기', 228, 75);
+INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-30', 'YYYY-MM-DD'), '중도포기', 228, 82);
 
 
