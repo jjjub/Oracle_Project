@@ -6637,3 +6637,75 @@ INSERT INTO tblItrsCompany (compk, stupk) VALUES (69, 34);
 
 
 
+--tblEmployedStd. INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (stupk, TO_DATE('YYYY-MM-DD', 'regdate'), 'comname', 'insurance');
+
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (1, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성전자', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (2, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '네이버', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (3, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'SK텔레콤', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (5, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대자동차', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (6, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '에이프로젠', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (7, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한화', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (9, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '셀트리온', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (10, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '이마트', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (11, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데쇼핑', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (12, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데제과', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (13, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기아자동차', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (14, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'CJ제일제당', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (15, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'LG전자', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (16, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'LG유플러스', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (18, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'KT', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (19, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데칠성음료', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (20, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대백화점', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (22, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'CJ ENM', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (23, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국전력공사', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (24, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대건설', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (25, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기업은행', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (26, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성생명', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (27, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '이마트24', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (28, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국도로공사', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (30, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국산업기술진흥원', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (31, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성화재해상보험', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (32, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '농심', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (33, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'SK이노베이션', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (34, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국전자인증', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (37, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '이베이코리아', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (40, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '미래에셋대우', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (41, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한화토탈', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (42, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'GS건설', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (43, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데푸드', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (44, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'GS리테일', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (45, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '코오롱인더스트리', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (46, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한화생명', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (47, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '대우건설', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (48, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '미래에셋증권', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (49, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성중공업', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (50, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '포스코건설', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (51, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '농협은행', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (52, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '신한은행', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (53, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대그린푸드', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (57, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성전자', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (58, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '네이버', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (60, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'SK텔레콤', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (61, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대자동차', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (63, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '에이프로젠', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (65, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한화', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (67, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '셀트리온', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (68, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '이마트', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (69, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데쇼핑', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (70, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데제과', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (73, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기아자동차', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (74, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'CJ제일제당', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (77, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'LG전자', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (79, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'LG유플러스', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (80, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'KT', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (83, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '롯데칠성음료', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (84, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대백화점', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (86, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'CJ ENM', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (87, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국전력공사', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (89, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대건설', 'Y');
+INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (90, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기업은행', 'Y');
+
+
+
+
+
