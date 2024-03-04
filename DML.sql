@@ -1098,3 +1098,101 @@ INSERT INTO tblExam (expk, exam, eipk)
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins에서 사용되는 워크스페이스(workspace)란 무엇이며, 어떻게 활용하나요?', 1);
 INSERT INTO tblExam (expk, exam, eipk) 
     VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Jenkins에서 빌드 파라미터(build parameters)가 무엇이며, 어떻게 설정하나요?', 1);
+
+--tblCompany
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성전자', 1, 5, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '네이버', 1, 1, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'SK텔레콤', 1, 1, 1, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대자동차', 2, 5, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '에이프로젠', 2, 6, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '넷마블', 4, 1, 9, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화', 3, 6, 1, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '셀트리온', 1, 6, 4, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '넥슨', 4, 1, 9, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '넥슨코리아', 4, 1, 9, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '이마트', 1, 4, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '롯데쇼핑', 1, 4, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '롯데제과', 1, 6, 1, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성SDS', 2, 1, 9, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'SK하이닉스', 1, 5, 9, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '기아자동차', 1, 5, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'CJ제일제당', 1, 6, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화생명과학', 2, 5, 9, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'LG전자', 1, 5, 1, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '카카오', 1, 1, 15, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'LG유플러스', 1, 1, 1, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'KT', 1, 1, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '롯데칠성음료', 1, 6, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대백화점', 2, 4, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'CJ ENM', 1, 1, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대모비스', 2, 5, 9, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한국전력공사', 1, 1, 1, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대건설', 2, 9, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '기업은행', 1, 2, 1, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'POSCO', 1, 5, 14, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성생명', 1, 6, 1, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '이마트24', 1, 4, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한국도로공사', 6, 1, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한국산업기술진흥원', 7, 1, 1, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'LG화학', 1, 5, 8, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성화재해상보험', 1, 1, 1, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '농심', 1, 6, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'SK이노베이션', 1, 5, 1, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대위아', 2, 5, 9, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한국전자인증', 6, 1, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '이베이코리아', 2, 1, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '미래에셋대우', 1, 2, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화토탈', 1, 1, 1, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'GS건설', 1, 9, 1, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '아모레퍼시픽', 1, 6, 9, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '롯데푸드', 1, 6, 1, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), 'GS리테일', 1, 4, 1, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '코오롱인더스트리', 2, 5, 6, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화생명', 1, 1, 3, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '대우건설', 1, 9, 4, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한국가스공사', 1, 1, 11, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '미래에셋증권', 1, 2, 2, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '코웨이', 1, 6, 10, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성중공업', 1, 5, 13, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '포스코에너지', 1, 1, 7, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '효성', 1, 5, 12, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '대우조선해양', 1, 5, 17, 5);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대로템', 2, 5, 8, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한미약품', 2, 5, 16, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '빙그레', 1, 6, 17, 2);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '대한항공', 1, 1, 15, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대미포조선', 1, 5, 14, 4);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성중공업', 1, 5, 4, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '포스코건설', 2, 9, 6, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '농협은행', 1, 2, 1, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '신한은행', 1, 2, 1, 6);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화큐셀', 1, 5, 11, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '미래에셋생명', 1, 1, 17, 1);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '현대그린푸드', 2, 6, 1, 3);
+INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '한화솔루션', 1, 5, 11, 4);
+
+
+--tblBoard
+--자유
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-12-16' ,'YYYY-MM-DD'), '다들 힘내세요', '비전공자였지만 열심히 정처기 따고 공부해서 이번에 취업했습니다. 다들 파이팅', 1);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-10-17' ,'YYYY-MM-DD'), '학원 근처 맛집 추천', '5분 거리에 있는 칼국수 집 맛있어요 드셔보시길', 17);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2024-03-01' ,'YYYY-MM-DD'), '휴게실에 에어팟 두고 가신 분', '하늘색 케이스 에어팟 주인분 상담실에 놔뒀으니 가져가세요', 75);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-07-21' ,'YYYY-MM-DD'), '키보드 추천해주실분 계신가요', '사무용만 쓰다가 이제는 사야겠다싶어서.. 추천해주실분', 49);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-05-05' ,'YYYY-MM-DD'), '자바 너무 어렵네요', '문제푸는 것도 어려운데 프로젝트 들어가니까 정말 뭐가 뭔지 모르겠어요 열심히해야겠어요', 30);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-09-28' ,'YYYY-MM-DD'), '취업상담 받아보신분 계신가요', '받아보고싶은데 어떤 분위기인지 궁금해서요', 55);
+--질문
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-11-01' ,'YYYY-MM-DD'), '훈련장려금 관련 질문', '안녕하세요 이번에 수강하게 되었는데 훈련장려금을 따로 지원 받을 수 있을까요? 신청 방법이 따로 있다면 알려주세요', 14);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-04-16' ,'YYYY-MM-DD'), '교재는 지급 되나요?', '수업에 사용하는 교재를 사가야하는지, 학원에서 준다면 금액이 얼마인지 알려주세요', 33);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2022-06-13' ,'YYYY-MM-DD'), '수강신청을 어떻게 하나요', '따로 강좌를 신청해야하나요?', 2);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2024-02-01' ,'YYYY-MM-DD'), '재취업지원 신청 방법 궁금합니다', '쌍용교육센터에서 국비지원수업 수료 후 취업했습니다. 1년 근무하고 퇴사했는데 재취업을 지원해준다고 봐서 신청 방법 궁금합니다.', 69);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-03-09' ,'YYYY-MM-DD'), '취업지원은 어떻게 진행되나요?', '자소서랑 면접도 도와주시나요?', 51);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2024-01-16' ,'YYYY-MM-DD'), '훈련생 선발 기준', '면접을 보고 들어간다고 알고있는데 훈련생 선발 기준이 있을까요? 비전공자인데 전공자를 우선하는지, 학벌도 보는 지 궁금하여 질문 남깁니다.', 38);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-09-19' ,'YYYY-MM-DD'), '수강중에 취업하면 수료할 수 없나요?', '근무시간과 수업시간이 안겹치면 취업 후에도 수업을 계속 들을 수 있나요?', 23);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2021-12-04' ,'YYYY-MM-DD'), '국민내일배움카드 관련', '개강일자 이후에 카드가 발급될 것 같은데 수강 불가한가요', 80);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2022-07-10' ,'YYYY-MM-DD'), '수업 두 번 수강할 수 있나요?', '쌍용교육센터에서 국비지원교육을 수료했는데 부족함을 느껴 다시 한 번 듣고싶습니다. 가능한가요?', 17);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-09-24' ,'YYYY-MM-DD'), '국민내일배움카드 지원한도는 얼마인가요?', '제가 전에 국민내일배움카드로 단과학원을 수료했는데 전액 지원 가능한 지, 자비 부담 없는 지 궁금합니다', 29);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-05-29' ,'YYYY-MM-DD'), '국민내일배움카드 만료', '국민내일배움카드 계좌사용의 유효기간이 끝났는데 이 계좌카드로 훈련비 지원 받을 수 업을까요', 78);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2022-04-25' ,'YYYY-MM-DD'), '연령 제한이 있을까요', '코딩에 관심을 가지게 되었는데 나이가 있어서 연령제한 있는지 궁금합니다', 42);
+INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-10-30' ,'YYYY-MM-DD'), '예습을 안하면 따라가기 어려울까요', '비전공자입니다. 갑자기 수강하게되어서 예습할 시간이 없는데 수업 따라가기 어려울까요?', 42);
+
+
