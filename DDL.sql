@@ -338,7 +338,6 @@ REFERENCES tblExamDone (edpk);
 create table tblTask (
  	taskpk number primary key,
  	task varchar2(1000) NOT NULL,
- 	taskanswer varchar2(1000) NOT NULL,
  	tpk number NOT NULL
 );
 ALTER table tblTask ADD CONSTRAINT FK_tblTeacher_TO_tblTask FOREIGN KEY (tpk)
@@ -350,7 +349,6 @@ REFERENCES tblTeacher (tpk);
 create table tblTaskSubmit (
  	tspk number primary key,
 	tsanswer varchar2(1000) NOT NULL,
-	correct varchar2(1) NULL,
 	taskpk number NOT NULL,
 	stupk number NOT NULL,
 	ocpk number NOT NULL,
