@@ -8098,8 +8098,7 @@ INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '주변 상태(어휘적 환경)에 대한 참조와 함께 묶인(포함된) 함수의 조합', 72, 3, 21);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '주변 상태(어휘적 환경)에 대한 참조와 함께 묶인(포함된) 함수의 조합', 73, 3, 21);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '주변 상태(어휘적 환경)에 대한 참조와 함께 묶인(포함된) 함수의 조합', 74, 3, 21);
-<<<<<<< HEAD
-=======
+
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'자바에서는 클래스를 단 하나만 상속할 수 있지만, 인터페이스는 여러 개를 동시에 구현할 수 있습니다. ',75,4,6);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'자바에서는 클래스를 단 하나만 상속할 수 있지만, 인터페이스는 여러 개를 동시에 구현할 수 있습니다. ',76,4,6);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'자바에서는 클래스를 단 하나만 상속할 수 있지만, 인터페이스는 여러 개를 동시에 구현할 수 있습니다. ',77,4,6);
