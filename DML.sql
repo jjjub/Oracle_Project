@@ -8102,26 +8102,7 @@ INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '주변 상태(어휘적 환경)에 대한 참조와 함께 묶인(포함된) 함수의 조합', 72, 3, 21);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '주변 상태(어휘적 환경)에 대한 참조와 함께 묶인(포함된) 함수의 조합', 73, 3, 21);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '주변 상태(어휘적 환경)에 대한 참조와 함께 묶인(포함된) 함수의 조합', 74, 3, 21);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 75, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 76, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 77, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 78, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 79, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 80, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 81, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 82, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 83, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 84, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 85, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 86, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 87, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 88, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 89, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 90, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 91, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 92, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 93, 4, 8);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'O', 94, 4, 8);
+
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '구글에서 대용량 데이터 처리를 분산 병렬 컴퓨팅에서 처리하기 위한 목적으로 제작하여 2004년 발표한 소프트웨어 프레임워크, 클러스터 환경에서 병렬 처리를 지원하기 위해 사용', 95, 5, 34);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '구글에서 대용량 데이터 처리를 분산 병렬 컴퓨팅에서 처리하기 위한 목적으로 제작하여 2004년 발표한 소프트웨어 프레임워크, 클러스터 환경에서 병렬 처리를 지원하기 위해 사용', 96, 5, 34);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '구글에서 대용량 데이터 처리를 분산 병렬 컴퓨팅에서 처리하기 위한 목적으로 제작하여 2004년 발표한 소프트웨어 프레임워크, 클러스터 환경에서 병렬 처리를 지원하기 위해 사용', 97, 5, 34);
@@ -8515,153 +8496,150 @@ INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'ETL 과정과 주요 문제점 ETL 과정은 데이터 추출(Extraction), 변환(Transformation), 로딩(Loading)을 포함합니다. 주요 문제점으로는 데이터 품질, 데이터 호환성, 변환 과정에서의 복잡성, 그리고 처리 시간이 있습니다.',149,6,50);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'ETL 과정과 주요 문제점 ETL 과정은 데이터 추출(Extraction), 변환(Transformation), 로딩(Loading)을 포함합니다. 주요 문제점으로는 데이터 품질, 데이터 호환성, 변환 과정에서의 복잡성, 그리고 처리 시간이 있습니다.',150,6,50);
 --1과정
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk)				
-VALUES 				
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract',	1,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '	',	2,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	3,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break',	4,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel',	5,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract',	6,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	7,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	8,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break',	9,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel',	10,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract',	11,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	12,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	13,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break',	14,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel',	15,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract',	16,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	17,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	18,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break',	19,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel',	20,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract',	21,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	22,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	23,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break',	24,	1,	1),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	1,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float',	2,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double',	3,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer',	4,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	5,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float',	6,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double',	7,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer',	8,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	9,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float',	10,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double',	11,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer',	12,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	13,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float',	14,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double',	15,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer',	16,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	17,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float',	18,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double',	19,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer',	20,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String',	21,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float',	22,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double',	23,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer',	24,	1,	2),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	1,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	2,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	3,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	4,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	5,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	6,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	7,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	8,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	9,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	10,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	11,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	12,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	13,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	14,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	15,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	16,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	17,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	18,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	19,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	20,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	21,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	22,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	23,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	24,	1,	62),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	1,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	2,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	3,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	4,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	5,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	6,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	7,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	8,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	9,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	10,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	11,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	12,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	13,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	14,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	15,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	16,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	17,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	18,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	19,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	20,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	21,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	22,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	23,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료',	24,	1,	67),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	1,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	2,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	3,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	4,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	5,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	6,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	7,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	8,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	9,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	10,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	11,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	12,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	13,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	14,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	15,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	16,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	17,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	18,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	19,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	20,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	21,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	22,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	23,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.',	24,	1,	69),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	1,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	2,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	3,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	4,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	5,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	6,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	7,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	8,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	9,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	10,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	11,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	12,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	13,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	14,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	15,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	16,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	17,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	18,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	19,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	20,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	21,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	22,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.',	23,	1,	74),
-((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',	24,	1,	74);
-
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract', 1, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 2, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 3, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break', 4, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel', 5, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract', 6, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 7, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 8, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break', 9, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel', 10, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract', 11, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 12, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 13, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break', 14, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel', 15, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract', 16, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 17, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 18, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break', 19, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'excel', 20, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'abstract', 21, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 22, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 23, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'break', 24, 1, 1);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 1, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float', 2, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double', 3, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer', 4, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 5, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float', 6, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double', 7, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer', 8, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 9, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float', 10, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double', 11, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer', 12, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 13, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float', 14, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double', 15, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer', 16, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 17, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float', 18, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double', 19, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer', 20, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'String', 21, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Float', 22, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Double', 23, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'Integer', 24, 1, 2);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 1, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 2, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 3, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 4, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 5, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 6, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 7, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 8, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 9, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 10, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 11, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 12, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 13, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 14, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 15, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 16, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 17, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 18, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 19, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 20, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 21, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 22, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 23, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 24, 1, 62);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 1, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 2, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 3, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 4, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 5, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 6, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 7, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 8, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 9, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 10, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 11, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 12, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 13, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 14, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 15, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 16, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 17, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 18, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 19, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 20, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 21, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 22, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 23, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '프로젝트 완료', 24, 1, 67);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 1, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 2, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 3, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 4, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 5, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 6, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 7, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 8, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 9, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 10, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 11, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 12, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 13, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 14, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 15, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 16, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 17, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 18, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 19, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 20, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 21, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 22, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 23, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)는 웹 애플리케이션을 개발하기 위한 Java 기반의 서버 측 프로그래밍 기술입니다. JSP는 HTML 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있도록 해줍니다.', 24, 1, 69);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 1, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 2, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 3, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 4, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 5, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 6, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 7, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 8, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 9, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 10, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 11, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 12, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 13, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 14, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 15, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 16, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 17, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 18, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 19, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 20, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 21, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 22, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP(JavaServer Pages)에서 디렉티브 태그는 JSP 페이지의 전반적인 속성을 지정하는 데 사용됩니다. 디렉티브 태그는 JSP 엔진에게 특정 지시사항을 전달하는 역할을 합니다.', 23, 1, 74);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ', 24, 1, 74);
 
 
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',25, 2, 10);
@@ -8738,13 +8716,13 @@ INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(
 오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',47, 2, 12);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',49, 2, 12);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
-오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',50, 2, 12);"
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',50, 2, 12);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
-오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',51, 2, 12);"
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',51, 2, 12);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '다르지 않음',52, 2, 12);
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',53, 2, 12);"
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',53, 2, 12);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
-오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',54, 2, 12);"
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',54, 2, 12);
 
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',25, 2, 3);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',26, 2, 3);
