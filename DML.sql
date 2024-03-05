@@ -7972,3 +7972,45 @@ INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELEC
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), '자바스크립트 (JavaScript) 자료', '자바스크립트 (JavaScript) 수업 자료',TO_DATE('2024-03-03', 'YYYY-MM-DD'),224);
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), 'AWS (Amazon Web Services) 자료', 'AWS (Amazon Web Services) 수업 자료',TO_DATE('2024-03-04', 'YYYY-MM-DD'),224);
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), '오라클 (Oracle) 자료', '오라클 (Oracle) 수업 자료',TO_DATE('2024-03-05', 'YYYY-MM-DD'),224);
+
+--tblTask
+INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '''이것이 자바다'' 1-30p 읽어오기', 212);
+INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '자바 온라인 학습 1회차 수강', 215);
+INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '다음 수업 전까지 온라인 학습-UI 흐름 설계 들어오기', 217);
+INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '팀프로젝트 발표(15분 내외) 준비해오기', 221);
+INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '프로젝트 데이터 넣어오기', 218);
+INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '''김상형의 SQL 정복'' 읽어오기', 218);
+
+--tblTaskSubmit
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '자바의 핵심 원리를 명확하게 이해할 수 있었다.', 1, 6, 1); 
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '실용적이고 현실적인 예제를 통해 개념을 이해하는 데 도움이 되었다.', 1, 11, 1); 
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '자바 언어의 다양한 기능과 기술에 대한 폭넓은 시야를 얻을 수 있었다.', 1, 14, 1);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '책의 구성과 설명이 논리적이고 직관적이어서 학습이 효율적이었다.', 1, 19, 1);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '자바 프로그래밍에 대한 자신감을 높여주는 좋은 학습 자료였다.', 1, 22, 1);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '객체지향 프로그래밍의 핵심 개념을 명확히 이해할 수 있었다.', 2, 29, 2); 
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '클래스와 객체의 차이에 대한 이해가 더욱 명확해졌다.', 2, 33, 2);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '변수와 데이터 타입의 중요성과 활용법을 숙지할 수 있었다.', 2, 37, 2);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '조건문과 반복문을 효과적으로 활용하여 프로그램의 흐름을 제어하는 방법을 배웠다.', 2, 40, 2);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '메서드의 개념과 활용법을 이해하여 코드의 모듈화와 재사용성을 높일 수 있었다.', 2, 45, 2);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '강의를 통해 UI 흐름 설계의 핵심은 사용자의 경험을 중심으로 한다는 것을 배웠습니다. 사용자의 요구사항과 행동 패턴을 고려하여 UI를 설계하고 개선함으로써 사용자들이 보다 쉽고 효율적으로 애플리케이션을 이용할 수 있도록 하는 것이 중요하다는 것을 깨달았습니다.', 3, 101, 5); 
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), 'UI 흐름 설계는 정보를 구조화하고 조직하는 것이 핵심이라는 것을 이해했습니다. 정보를 명확하게 표현하고 유기적으로 연결함으로써 사용자가 정보를 쉽게 찾을 수 있도록 하는 것이 필요하다는 것을 배웠습니다.', 3, 108, 5);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '일관된 시각적 스타일과 디자인 패턴을 유지하는 것이 사용자들에게 일관된 경험을 제공하는 데 중요하다는 것을 깨달았습니다. 일관성 있는 디자인을 유지하면 사용자가 애플리케이션을 보다 쉽게 이해하고 사용할 수 있다는 점을 배웠습니다.', 3, 116, 5);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '사용자와의 상호작용을 고려하여 버튼, 링크, 폼 등의 요소들을 설계하는 것이 중요하다는 것을 배웠습니다. 사용자가 원하는 기능을 수행할 수 있는 간편하고 직관적인 인터페이스를 제공함으로써 사용자들의 만족도를 높일 수 있다는 점을 이해했습니다.', 3, 122, 5);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), 'UI 흐름 설계는 반복적인 개선과 피드백을 통해 완성도를 높이는 것이 필요하다는 것을 배웠습니다. 사용자의 피드백을 수집하고 이를 바탕으로 UI를 지속적으로 개선해야만 사용자들에게 최상의 경험을 제공할 수 있다는 점을 깨달았습니다.', 3, 124, 5);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '발표 시간이 제한되어 있기 때문에 시간 관리와 계획 수립의 중요성을 더욱 깨달았습니다. 효율적인 일정 관리와 발표 슬라이드의 구성을 통해 발표 시간을 최대한 활용할 수 있었습니다.', 4, 129, 6); 
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '팀 프로젝트를 통해 자신의 역량을 발휘하고 결과물을 공개하는 경험은 자신감을 향상시켰습니다. 발표를 통해 자신의 아이디어와 기술적 역량을 자신 있게 전달할 수 있었습니다.', 4, 134, 6);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '프로젝트를 통해 배운 기술 스택을 실전에서 활용하는 경험이 매우 유익했습니다. 실제 프로젝트에서의 적용은 이론적 지식을 실전으로 확장하는 데 도움이 되었습니다.', 4, 143, 6);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '프로젝트 진행 중 발생하는 다양한 문제를 해결하면서 문제 해결 능력이 향상되었습니다. 새로운 도전에 대한 대처 능력을 키웠습니다.', 4, 148, 6);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '팀 프로젝트를 준비하면서 협업의 중요성을 깨달았습니다. 각자의 역할과 책임을 명확히 하고 소통을 통해 효율적으로 일하는 방법을 배웠습니다.', 4, 150, 6);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '외부 데이터를 프로젝트에 통합할 때 데이터의 품질을 유지하기가 어려웠습니다. 데이터의 일관성, 정확성, 완전성 등을 확인하고 유지하는 것이 중요하다는 것을 깨달았습니다.', 5, 153, 9); 
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '다양한 소스로부터 수집한 데이터들이 서로 다른 형식과 구조를 가지고 있어 이를 통합하는 것이 어려웠습니다. 데이터의 형식을 일치시키고 호환성을 확보하는 데 시간과 노력이 필요했습니다.', 5, 158, 9);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '데이터를 프로젝트에 사용하기 전에는 데이터를 정제하고 전처리하는 과정이 필요했습니다. 이상치의 처리, 결측치의 대체, 데이터의 스케일 조정 등을 통해 데이터를 분석에 적합한 형태로 가공하는 과정이 복잡하고 시간이 소요되었습니다.', 5, 165, 9);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '데이터 보안과 개인정보 보호: 프로젝트에 사용하는 데이터가 개인정보를 포함하고 있을 경우 데이터 보안과 개인정보 보호에 대한 고려가 필요했습니다. 데이터를 안전하게 저장, 전송, 처리하는 방법을 고려하고 이를 위한 보안 정책을 수립해야 했습니다.', 5, 168, 9);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '데이터 시각화와 이해: 프로젝트에 사용된 데이터를 시각화하여 인사이트를 도출하고 결론을 내리는 것이 중요했습니다. 데이터를 시각적으로 표현하고 이를 통해 데이터에 대한 이해를 높이는 것이 어려웠지만, 동시에 매우 중요한 부분이라는 것을 깨달았습니다.', 5, 176, 9);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), 'SQL 기초부터 심화까지 친절하게 설명되어 있어 학습이 쉬웠습니다.', 6, 179, 10);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '실용적인 예제와 문제를 통해 SQL 쿼리 작성 능력이 향상되었습니다.', 6, 183, 10);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '데이터베이스 설계와 최적화에 대한 효과적인 가이드를 제공하여 실무에서의 활용도가 높았습니다.', 6, 187, 10);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '복잡한 SQL 쿼리를 이해하는 데 도움이 되는 다양한 팁과 테크닉을 배울 수 있었습니다.', 6, 194, 10);
+INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '풍부한 실전 경험을 바탕으로 한 저자의 전문성이 느껴져 신뢰할 만한 교재였습니다.', 6, 201, 10);
+
+
