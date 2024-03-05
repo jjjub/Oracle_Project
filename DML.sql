@@ -1326,7 +1326,6 @@ INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '모바일 앱 개발 전문가 코스2', '2024-07-02', 30, 15, 2, 220, 1);		
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 5, 217, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨2', '2024-02-12', 26, 14, 6, 218, 2);	
-select * from tblboard;
 
 
 --tblExamInfo
@@ -1772,6 +1771,56 @@ INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-05-29' ,'YYYY-MM-DD'), '국민내일배움카드 만료', '국민내일배움카드 계좌사용의 유효기간이 끝났는데 이 계좌카드로 훈련비 지원 받을 수 업을까요', 78);
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2022-04-25' ,'YYYY-MM-DD'), '연령 제한이 있을까요', '코딩에 관심을 가지게 되었는데 나이가 있어서 연령제한 있는지 궁금합니다', 42);
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-10-30' ,'YYYY-MM-DD'), '예습을 안하면 따라가기 어려울까요', '비전공자입니다. 갑자기 수강하게되어서 예습할 시간이 없는데 수업 따라가기 어려울까요?', 42);
+
+--tblComment
+--자유
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '축하드려요! 너무 부럽네요', 45, 1);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '파이팅~~', 11, 1);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '저도 먹어봤는데 맛있더라구요 바지락 칼국수 맛있어요', 56, 2);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '한성 키보드 좋습니다', 70, 4);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '키보드는 직접 가서 쳐보시고 손에 맞는 거 사는 게 좋아요', 48, 4);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '저도 그날 내용만 복습해서 겨우겨우 따라가요', 66, 5);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '편한 분위기로 상담해주십니다~~', 39, 6);
+--질문
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '교통비와 식비에 해당하는 훈련장려금은 단위기간(1개월)동안 출석률이 80%이상이어야 지급됩니다. 교통비는 1일 훈련시간에 상관없이 지원되고 식비는 1일 5시간 이상 훈련과정에 출석한 경우 지급됩니다. 국가기간전략산업직종훈련의 경우 한달 최대 116,000원(20일최대기준)까지 수령이 가능하며, K-디지털트레이닝의 경우 한달 최대 316,000원까지 지원받을 수 있습니다. 따로 신청할 필요 없이 학원 등록시 제출한 통장사본의 계좌로 자동입금됩니다.', 201, 7);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '수업에 필요한 교재는 무료로 지급이 되고 있습니다.', 206, 8);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '쌍용교육센터 홈페이지에 접속하셔서 온라인 수강 신청하여 주시면 서류 검토 후 개별 연락드립니다.', 208, 9);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '취업지원팀이 별도로 구성되어 있어 평가제에 의한 추천 및 지원(취업의지, 자격증 취득, 인성관련, 수업평가)이 이루어지고 있으며, 월 1회 이상 수료자에 대한 전화 상담을 통하여 취업여부 확인 및 미취업자에 대한 계속적인 취업의뢰를 하고 있습니다. 이러한 자료를 토대로 구인업체와 연결하고 있으며 수료 후에도 지속적인 지원이 가능합니다.', 203, 10);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '1차 서류전형-2차 면접전형(실무자/임원 2회)으로 훈련생을 선발합니다.
+
+
+-지원동기, 성실성, 적극성, 중도탈락가능성
+-장래희망 및 과정에 대한 열의
+-해당과정에 대한 인식
+-취업의사여부
+
+
+면접 시에는 무엇보다도 중도탈락 없이 끝까지 수강할 수 있을 지의 여부와 취업 가능성,
+진로방향과 해당 과목이 부합되는 지의 여부와 훈련과정에 대한 열정이 확고한지를 주로 보게 됩니다.', 205, 11);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '취업된 회사에서 훈련과정을 수강할 수 있도록 동의하는 확인서를 제출한다면 훈련과정 수강은 수료일까지 가능합니다.', 203, 12);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '실업, 재직, 자영업 여부와 관계없이 누구나 신청 가능합니다. (만75세 미만)
+
+다만, 공무원, 사학연금 대상자, 재학생, 일정임금 이상 대규모기업 종사자, 일부 고소득 자영업자 및 특수고용형태종사자 제외', 204, 13);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '훈련과정은 1년에 최대 5개까지 수강할 수 있습니다.
+
+다만 예산 사정에 따라 추가 조정이 있을 수 있습니다. 동일직종(NCS 세분류 기준)의 훈련과정은 1년에 최대 3회 까지 수강 가능하며, 동일한 훈련과정의 재수강은 허용되지 않습니다.
+
+단, 불가피한 사유(임실, 출산, 질병)로 기존 훈련과정을 중도탈락한 경우 고용센터 상담을 통해 동일한 훈련과정 재수강이 가능합니다.', 205, 14);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '1인당 정부지원한도는 5년간 300~500만원이며, 자부담 수준은 직종별 취업률 등에 따라 차등됩니다.
+
+(저소득계층 및 국가기간전략산업직종훈련 수강자는 자부담 없음)', 209, 15);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '계좌사용의 유효기간이 끝나면 계좌카드는 훈련비를 지원받기 위한 용도로는 사용할 수 없습니다.
+
+그러나 계좌카드는 일반 신용(체크)카드의 기능을 함께 가지고 있기 때문에 유효기간이 끝나더라도 일반적인 금융결제의 수단으로는 사용할 수 있습니다.
+또한 만약 향후 계좌를 통한 지원을 다시 받는 경우 동일한 카드를 사용하게 됩니다.', 208, 16);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '연령제한은 따로 없습니다.', 211, 17);
+INSERT INTO tblComment (cmmpk, cmmpost, userpk, boardpk) VALUES ((SELECT NVL(MAX(cmmpk), 0) + 1 FROM tblComment), '고용노동부 훈련과정은 훈련생에게 전문적인 지식과 기술을 습득하여 취업할 수 있도록 지원하는 프로그램으로
+
+교육과정에 사전지식이 없는 초보자도 기초부터 체계적으로 배울 수 있는 과정입니다.
+
+교육과정중 선행학습이 필요한 경우는 모집 시 별도로 사전 공지합니다.
+
+', 210, 18);
 
 
 --tblAttendance. INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk) VALUES ((SELECT NVL(MAX(attpk), 0) + 1 FROM tblAttendance), TO_DATE('YYYY-MM-DD', 'attenddate'), TO_TIMESTAMP('YYYY-MM-DD HH24:MI:SS', 'checkin'), TO_TIMESTAMP('YYYY-MM-DD HH24:MI:SS', 'checkout'), attstspk, stupk);
