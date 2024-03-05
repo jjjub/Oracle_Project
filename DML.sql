@@ -8549,3 +8549,214 @@ INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'ETL 과정과 주요 문제점 ETL 과정은 데이터 추출(Extraction), 변환(Transformation), 로딩(Loading)을 포함합니다. 주요 문제점으로는 데이터 품질, 데이터 호환성, 변환 과정에서의 복잡성, 그리고 처리 시간이 있습니다.',149,6,50);
 INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone),'ETL 과정과 주요 문제점 ETL 과정은 데이터 추출(Extraction), 변환(Transformation), 로딩(Loading)을 포함합니다. 주요 문제점으로는 데이터 품질, 데이터 호환성, 변환 과정에서의 복잡성, 그리고 처리 시간이 있습니다.',150,6,50);
 
+
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',25, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',26, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',27, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',28, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',29, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',30, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',31, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',32, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',33, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',34, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',35, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',36, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',37, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',38, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',39, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',40, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',41, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',42, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',43, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',44, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',45, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',46, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',47, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',48, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',49, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',50, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',51, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 있다.',52, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',53, 2, 10);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '선언할 수 없다.',54, 2, 10);
+
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',25, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',26, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',27, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '다르지 않음',28, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',29, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',30, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',31, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '다르지 않음',32, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',33, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',34, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',35, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',36, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',37, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',38, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',39, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',40, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',41, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '다르지 않음',42, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '다르지 않음',43, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',44, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',45, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',46, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',47, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',49, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',50, 2, 12);"
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',51, 2, 12);"
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '다르지 않음',52, 2, 12);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',53, 2, 12);"
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '오버로딩은 한 클래스 내에서 동일한 이름의 메서드를 여러 개 정의하는 것으로, 매개변수의 개수나 타입이 다른 다양한 버전을 가질 수 있습니다. 반면에 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하는 것으로, 런타임 시에 결정되고 동적 바인딩에 의해 처리됩니다. 오버로딩은 정적 바인딩에 의해 처리되고 컴파일 시간에 결정됩니다. 
+오버로딩은 같은 이름의 메서드를 다양한 매개변수로 정의하여 메서드를 다양하게 사용할 수 있게 합니다. 예를 들어, print 메서드를 정수, 문자열 등 다양한 매개변수 형식에 대해 오버로딩하여 다양한 출력 형식을 지원할 수 있습니다. 오버라이딩은 부모 클래스의 메서드를 자식 클래스에서 재정의하여 동작을 변경할 수 있습니다. 상속받은 메서드의 동작을 변경하거나 다형성을 구현하는 데에 활용됩니다.',54, 2, 12);"
+
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',25, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',26, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',27, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',28, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',29, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',30, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',31, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',32, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',33, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',34, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',35, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',36, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',37, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',38, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',39, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',40, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',41, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',42, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',43, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',44, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',45, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',46, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',47, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',48, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',49, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',50, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',51, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',52, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '할 수 있다.',53, 2, 3);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '동시에 상속할 수 없다',54, 2, 3);
+
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',25, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',26, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',27, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',28, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',29, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',30, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',31, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',32, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',33, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',34, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',35, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',36, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',37, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',38, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',39, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',40, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',41, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',42, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',43, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',44, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',45, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',46, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',47, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',48, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',49, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',50, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',51, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',52, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',53, 2, 64);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',54, 2, 64);
+
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',25, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',26, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',27, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',28, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',29, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',30, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',31, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',32, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',33, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',34, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',35, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',36, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',37, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',38, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',39, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',40, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',41, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',42, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',43, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',44, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',45, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',46, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',47, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',48, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',49, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',50, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',51, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',52, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '해결 완료',53, 2, 68);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '미해결',54, 2, 68);
+
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',25, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',26, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',27, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',28, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',29, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',30, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',31, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',32, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',33, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',34, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',35, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',36, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',37, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',38, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',39, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',40, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',41, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',42, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',43, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',44, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',45, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',46, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',47, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',48, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',49, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',50, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',51, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',52, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), ' ',53, 2, 70);
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'JSP의 디렉티브 태그는 페이지의 설정을 지정하고 다른 페이지를 포함하며 사용자 지정 태그를 추가하는 데 사용됩니다. 페이지의 속성과 동작을 제어하여 코드의 유지보수성과 재사용성을 높이는 역할을 합니다.',54, 2, 70);
+
+
+
+
+
