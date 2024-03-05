@@ -794,17 +794,16 @@ update tblStudent set attrate =  82 where stupk = 90;
 
 --tblAdmin
 --INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT NVL(MAX(admpk), 0) + 1 FROM tblAdmin), 1);
-
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '모모심'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '임장잎'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '김수숭'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '추호초'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '남태구'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '변일준'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '임엽단'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '선상우'), );
-INSERT INTO tblAdmin (admpk, admstspk) VALUES ((SELECT userpk FROM tblUser WHERE name = '전박솜'), );
-
+--SELECT * FROM TBLADMIN;
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (203, 1);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (204, 2);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (205, 1);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (206, 2);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (207, 1);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (208, 3);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (209, 1);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (210, 3);
+INSERT INTO tblAdmin (admpk, admstspk) VALUES (211, 3);
 --tblComLocation.
 ----select * from tblComLocation;
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '서울특별시');
@@ -826,7 +825,7 @@ INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) 
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '전북특별자치도');
 select * from tblstudent;
 --tblAdminStatus;		INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '상태');
---select * from tblAdminStatus;
+select * from tblAdminStatus;
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '재직');
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '휴직');
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '퇴직');
@@ -1394,74 +1393,38 @@ INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES (
 INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-05-10', '실기', 20, 18, 10);
 INSERT INTO tblExamInfo (exinfopk, examdate, examtype, wt, subpk, ocpk) VALUES ((SELECT NVL(MAX(exinfopk), 0) + 1 FROM tblExamInfo), '2024-06-10', '실기', 20, 6, 10);
 
-delete from tblExamInfo where ocpk = 10;
-select * from tbluser;
-select * from tblboard;
-select * from tblSubject;
-select * from tblOpenCourse;
-select * from tblExamInfo;
 select  e.exinfopk, s.subname, e.examtype, o.ocname, o.ocpk, e.wt from tblExamInfo e inner join tblOpenCourse o on e.ocpk = o.ocpk inner join tblSubject s on e.subpk = s.subpk order by ocname asc ;
 --tblExam
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바의 예약어가 아닌 것은 무엇입니까?', 1);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 사용되는 기본 데이터 타입이 아닌 것은 무엇입니까?', 3);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 4);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 31);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 35);
-    INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 19);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 "==" 연산자는 무엇을 비교합니까?', 13);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 18);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 31);
-    INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 2);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바 프로젝트', 14);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 2);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 31);
-    INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 19);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '딥러닝에서 "과적합(Overfitting)"이란 무엇이며, 어떻게 방지할 수 있나요?', 25);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'CNN(Convolutional Neural Network)에서 합성곱 층(Convolutional Layer)과 풀링 층(Pooling Layer)의 역할에 대해 설명하세요.', 25);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'RNN(Recurrent Neural Network)과 LSTM(Long Short-Term Memory)의 차이점은 무엇이며, 각각의 장단점은 무엇인가요?', 29);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자기 지도 학습(Self-supervised Learning)이란 무엇이며, 자기 지도 학습을 활용한 딥러닝 알고리즘의 예시를 제시하세요.', 29);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클 프로젝트.', 15);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클 프로젝트.', 20);    
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 17);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Promise와 async/await의 차이점은 무엇인가요? 각각의 장단점은 무엇인가요?', 17);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''이벤트 위임(Event Delegation)''이란 무엇이며, 어떻게 사용되나요?', 22);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''호이스팅(Hoisting)''이란 무엇이며, 어떻게 작동하나요?', 22);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''이벤트 위임(Event Delegation)''이란 무엇이며, 어떻게 사용되나요?', 43);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''호이스팅(Hoisting)''이란 무엇이며, 어떻게 작동하나요?', 39);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'ES6의 중요한 기능 중 하나를 선택하여 설명하고, 예시를 제시하세요.', 43);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'ES6의 중요한 기능 중 하나를 선택하여 설명하고, 예시를 제시하세요.', 39);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 43);
-INSERT INTO tblExam (expk, exam, exinfopk) 
-    VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 39);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바의 예약어가 아닌 것은 무엇입니까?', 1);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 사용되는 기본 데이터 타입이 아닌 것은 무엇입니까?', 3);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 4);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 31);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 35);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 클래스와 인터페이스를 동시에 상속할 수 있습니까?', 19);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 "==" 연산자는 무엇을 비교합니까?', 13);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 18);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 31);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바에서 인터페이스에 변수를 선언할 수 있습니까?', 2);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바 프로젝트', 14);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 2);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 31);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오버로딩과 오버라이딩에 대해서 특징 및 차이점, 활용 사례를 자세히 서술하시오.', 19);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '딥러닝에서 "과적합(Overfitting)"이란 무엇이며, 어떻게 방지할 수 있나요?', 25);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'CNN(Convolutional Neural Network)에서 합성곱 층(Convolutional Layer)과 풀링 층(Pooling Layer)의 역할에 대해 설명하세요.', 25);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'RNN(Recurrent Neural Network)과 LSTM(Long Short-Term Memory)의 차이점은 무엇이며, 각각의 장단점은 무엇인가요?', 29);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자기 지도 학습(Self-supervised Learning)이란 무엇이며, 자기 지도 학습을 활용한 딥러닝 알고리즘의 예시를 제시하세요.', 29);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클 프로젝트.', 15);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '오라클 프로젝트.', 20);    
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 17);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Promise와 async/await의 차이점은 무엇인가요? 각각의 장단점은 무엇인가요?', 17);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''이벤트 위임(Event Delegation)''이란 무엇이며, 어떻게 사용되나요?', 22);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''호이스팅(Hoisting)''이란 무엇이며, 어떻게 작동하나요?', 22);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''이벤트 위임(Event Delegation)''이란 무엇이며, 어떻게 사용되나요?', 43);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''호이스팅(Hoisting)''이란 무엇이며, 어떻게 작동하나요?', 39);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'ES6의 중요한 기능 중 하나를 선택하여 설명하고, 예시를 제시하세요.', 43);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'ES6의 중요한 기능 중 하나를 선택하여 설명하고, 예시를 제시하세요.', 39);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 43);
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '자바스크립트에서 ''클로저(Closure)''란 무엇인가요? 클로저가 사용되는 예시를 제시하세요.', 39);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Node.js의 주요 특징은 무엇입니까? 각 특징에 대해 간단히 설명하십시오.', 40);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'npm(Node Package Manager)이란 무엇이며, 어떤 기능을 제공합니까?', 40);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '비동기 프로그래밍이란 무엇이며, Node.js에서 어떻게 구현되는지 설명하십시오.', 40);
@@ -1495,7 +1458,7 @@ INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Kotlin를 이용한 프로젝트.', 34);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Kotlin를 이용한 프로젝트.', 5); --확인필
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Kotlin를 이용한 프로젝트.', 9);
-INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Kotlin를 이용한 프로젝트.', 6)
+INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Kotlin를 이용한 프로젝트.', 6);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Swift를 이용한 프로젝트.', 9);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'Swift를 이용한 프로젝트.', 10);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'PHP를 이용한 프로젝트.', 7);
@@ -1507,10 +1470,15 @@ INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), '스프링을 이용한 프로젝트.', 16);
 INSERT INTO tblExam (expk, exam, exinfopk) VALUES ((SELECT NVL(MAX(expk), 0) + 1 FROM tblExam), 'JSP에서의 디렉티브 태그(Directive Tag)에 대해 설명하고, 어떤 용도로 사용되는지 설명하십시오.', 11);
 
-select i.wt, o.ocpk from tblExam e inner join tblExamInfo i on e.exinfopk = i.exinfopk inner join tblOpenCourse o  on i.ocpk = o.ocpk order by o.ocpk;
-delete from tblExam where expk =1;
+select  * from tblExam e inner join tblExamInfo i on e.exinfopk = i.exinfopk inner join tblOpenCourse o  on i.ocpk = o.ocpk order by o.ocpk;
+select * from tblCourseParticipants c inner join tblOpenCourse o on o.ocpk = c.ocpk;
 select * from tblOpencourse;
 
+INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'exanswer',stupk, ocpk, expk);
+INSERT INTO tblExamDOne (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '정답', 1, 1, 시험번호);
+select * from tblExamDone;
+
+SELECT * FROM tblCourseParticipants;
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (1, 1);
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (2, 1);
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (3, 1);
@@ -1809,8 +1777,6 @@ INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-05-29' ,'YYYY-MM-DD'), '국민내일배움카드 만료', '국민내일배움카드 계좌사용의 유효기간이 끝났는데 이 계좌카드로 훈련비 지원 받을 수 업을까요', 78);
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2022-04-25' ,'YYYY-MM-DD'), '연령 제한이 있을까요', '코딩에 관심을 가지게 되었는데 나이가 있어서 연령제한 있는지 궁금합니다', 42);
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '질문게시판', TO_DATE('2023-10-30' ,'YYYY-MM-DD'), '예습을 안하면 따라가기 어려울까요', '비전공자입니다. 갑자기 수강하게되어서 예습할 시간이 없는데 수업 따라가기 어려울까요?', 42);
-
-
 
 
 --tblAttendance. INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk) VALUES ((SELECT NVL(MAX(attpk), 0) + 1 FROM tblAttendance), TO_DATE('YYYY-MM-DD', 'attenddate'), TO_TIMESTAMP('YYYY-MM-DD HH24:MI:SS', 'checkin'), TO_TIMESTAMP('YYYY-MM-DD HH24:MI:SS', 'checkout'), attstspk, stupk);
