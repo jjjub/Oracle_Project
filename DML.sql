@@ -805,7 +805,7 @@ INSERT INTO tblAdmin (admpk, admstspk) VALUES (209, 1);
 INSERT INTO tblAdmin (admpk, admstspk) VALUES (210, 3);
 INSERT INTO tblAdmin (admpk, admstspk) VALUES (211, 3);
 --tblComLocation.
-----select * from tblComLocation;
+--select * from tblComLocation;
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '서울특별시');
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '부산광역시');
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '대구광역시');
@@ -825,7 +825,7 @@ INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) 
 INSERT INTO tblComLocation (locpk, location) VALUES ((SELECT NVL(MAX(locpk), 0) + 1 FROM tblComLocation), '전북특별자치도');
 select * from tblstudent;
 --tblAdminStatus;		INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '상태');
-select * from tblAdminStatus;
+--select * from tblAdminStatus;
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '재직');
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '휴직');
 INSERT INTO tblAdminStatus (admstspk, admstatus) VALUES ((SELECT NVL(MAX(admstspk), 0) + 1 FROM tblAdminStatus), '퇴직');
@@ -1124,7 +1124,6 @@ INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(
 INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), 'Do it! 스위프트로 아이폰 앱 만들기 입문', '송호정, 이범근', '이지스퍼블리싱');
 INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), '스위프트 데이터 구조와 알고리즘', '에릭 아자르', '에이콘출판사');
 
-
 --tblSubjectTextbook. INSERT INTO tblSubjectTextbook (subookpk, subpk, bookpk) VALUES ((SELECT NVL(MAX(subookpk), 0) + 1 FROM tblSubjectTextbook), subpk, bookpk);
 -- 도커 (Docker) 관련 교재 연결
 INSERT INTO tblSubjectTextbook (subookpk, subpk, bookpk) VALUES ((SELECT NVL(MAX(subookpk), 0) + 1 FROM tblSubjectTextbook), 1, 27);
@@ -1234,6 +1233,7 @@ INSERT INTO tblSubjectTextbook (subookpk, subpk, bookpk) VALUES ((SELECT NVL(MAX
 INSERT INTO tblSubjectTextbook (subookpk, subpk, bookpk) VALUES ((SELECT NVL(MAX(subookpk), 0) + 1 FROM tblSubjectTextbook), 26, 58);
 
 --tblCourse
+--select * from tblCourse;
 -- 1. 클라우드 기반 Java 웹 애플리케이션 개발 스쿨: AWS, Java, Spring
 INSERT INTO tblCourse (crspk, crsname, crsduration) 
     VALUES ((SELECT NVL(MAX(crspk), 0) + 1 FROM tblCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨',180);
@@ -1313,7 +1313,7 @@ INSERT INTO tblCourse (crspk, crsname, crsduration)
 -- 10. 안정적인 웹 애플리케이션 배포를 위한 CI/CD 교육: Git, Jenkins, AWS
 INSERT INTO tblCourse (crspk, crsname, crsduration) 
     VALUES ((SELECT NVL(MAX(crspk), 0) + 1 FROM tblCourse), '안정적인 웹 애플리케이션 배포를 위한 CI/CD 교육', 170);
-    
+
 --tblOpenCourse
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'ocname', TO_DATE('YYYY-MM-DD', 'regdate'), field, crspk, crpk, tpk, ocspk);														
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨1', '2024-01-02', 24, 1, 1, 212, 2);	
@@ -1327,9 +1327,6 @@ INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 5, 217, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨2', '2024-02-12', 26, 14, 6, 218, 2);	
 select * from tblboard;
-
-update tblOpenCourse set ocname = 'Full-Stack 웹 애플리케이션 개발자 스쿨2' where ocpk =10; 
-select * from tblOpencourse;
 
 
 --tblExamInfo
@@ -1474,9 +1471,6 @@ select  * from tblExam e inner join tblExamInfo i on e.exinfopk = i.exinfopk inn
 select * from tblCourseParticipants c inner join tblOpenCourse o on o.ocpk = c.ocpk;
 select * from tblOpencourse;
 
-INSERT INTO tblExamDone (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), 'exanswer',stupk, ocpk, expk);
-INSERT INTO tblExamDOne (edpk, exanswer, stupk, ocpk, expk) VALUES ((SELECT NVL(MAX(edpk), 0) + 1 FROM tblExamDone), '정답', 1, 1, 시험번호);
-select * from tblExamDone;
 
 SELECT * FROM tblCourseParticipants;
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (1, 1);
@@ -1681,7 +1675,7 @@ INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (199, 10);
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (200, 10);
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (201, 10);
 INSERT INTO tblCourseParticipants (stupk, ocpk) VALUES (202, 10);
-
+select * from tblCompany ;
 --tblCompany
 INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '삼성전자', 1, 5, 1, 1);
 INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((SELECT NVL(MAX(compk), 0) + 1 FROM tblCompany), '네이버', 1, 1, 1, 1);
@@ -1756,6 +1750,7 @@ INSERT INTO tblCompany (compk, comname, sizepk, catepk, idstpk, locpk) VALUES ((
 
 
 --tblBoard
+select * from tblBOard;
 --자유
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-12-16' ,'YYYY-MM-DD'), '다들 힘내세요', '비전공자였지만 열심히 정처기 따고 공부해서 이번에 취업했습니다. 다들 파이팅', 1);
 INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk) VALUES ((SELECT NVL(MAX(boardpk), 0) + 1 FROM tblBoard), '자유게시판', TO_DATE('2023-10-17' ,'YYYY-MM-DD'), '학원 근처 맛집 추천', '5분 거리에 있는 칼국수 집 맛있어요 드셔보시길', 17);
@@ -1780,7 +1775,7 @@ INSERT INTO tblBoard (boardpk, boardtype, regdate, boardtitle, boardpost, userpk
 
 
 --tblAttendance. INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk) VALUES ((SELECT NVL(MAX(attpk), 0) + 1 FROM tblAttendance), TO_DATE('YYYY-MM-DD', 'attenddate'), TO_TIMESTAMP('YYYY-MM-DD HH24:MI:SS', 'checkin'), TO_TIMESTAMP('YYYY-MM-DD HH24:MI:SS', 'checkout'), attstspk, stupk);
-
+select * from tblAttendance;
 INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk) VALUES ((SELECT NVL(MAX(attpk), 0) + 1 FROM tblAttendance), TO_DATE('2024-01-02', 'YYYY-MM-DD'), TO_TIMESTAMP('2024-01-02 08:50:45', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-01-02 17:50:03', 'YYYY-MM-DD HH24:MI:SS'), 1, 91);
 INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk) VALUES ((SELECT NVL(MAX(attpk), 0) + 1 FROM tblAttendance), TO_DATE('2024-01-02', 'YYYY-MM-DD'), TO_TIMESTAMP('2024-01-02 08:17:29', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-01-02 17:56:35', 'YYYY-MM-DD HH24:MI:SS'), 1, 92);
 INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk) VALUES ((SELECT NVL(MAX(attpk), 0) + 1 FROM tblAttendance), TO_DATE('2024-01-02', 'YYYY-MM-DD'), TO_TIMESTAMP('2024-01-02 08:16:37', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2024-01-02 17:52:59', 'YYYY-MM-DD HH24:MI:SS'), 1, 93);
@@ -6342,9 +6337,8 @@ INSERT INTO tblAttendance (attpk, attenddate, checkin, checkout, attstspk, stupk
 
 
 
-
 --tblEmployedStd. INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (stupk, TO_DATE('YYYY-MM-DD', 'regdate'), 'comname', 'insurance');
-
+--select * from tblEmployedStd;
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (1, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성전자', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (2, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '네이버', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (3, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'SK텔레콤', 'Y');
@@ -6410,7 +6404,7 @@ INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (86, TO_D
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (87, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국전력공사', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (89, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대건설', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (90, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기업은행', 'Y');
-
+--select * from tblRecruit;
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '백은현', '950315-2886781', '01059006133', 'P', 1);
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '백민근', '980720-1214884', '01059055661', 'P', 1);
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '조혜대', '931105-1820652', '01091016321', 'P', 1);
@@ -6706,7 +6700,7 @@ INSERT INTO tblItrsCompany (compk, stupk) VALUES (69, 34);
 
 
 --tblEmployedStd. INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (stupk, TO_DATE('YYYY-MM-DD', 'regdate'), 'comname', 'insurance');
-
+--select * from tblEmployedStd;
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (1, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '삼성전자', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (2, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '네이버', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (3, TO_DATE('2023-12-29', 'YYYY-MM-DD'), 'SK텔레콤', 'Y');
@@ -6773,7 +6767,7 @@ INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (87, TO_D
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (89, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대건설', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (90, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기업은행', 'Y');
 
-
+--select * from tblResupport;
 INSERT INTO tblReSupport (stupk, regdate, extperiod, enddate, memo) VALUES (1,TO_DATE('2024-1-1', 'YYYY-MM-DD'),0,TO_DATE('2024-7-1', 'YYYY-MM-DD'), '대기업SI취업희망');
 INSERT INTO tblReSupport (stupk, regdate, extperiod, enddate, memo) VALUES (2,TO_DATE('2024-1-2', 'YYYY-MM-DD'),90,TO_DATE('2024-7-1', 'YYYY-MM-DD'), '프론트엔드에서 백엔드개발자로 취업희망');
 INSERT INTO tblReSupport (stupk, regdate, extperiod, enddate, memo) VALUES (10,TO_DATE('2024-1-3', 'YYYY-MM-DD'),0,TO_DATE('2024-7-3', 'YYYY-MM-DD'), '컨설팅 기업 취업희망');
@@ -6800,6 +6794,7 @@ INSERT INTO tblReSupport (stupk, regdate, extperiod, enddate, memo) VALUES (52,T
 INSERT INTO tblReSupport (stupk, regdate, extperiod, enddate, memo) VALUES (53,TO_DATE('2024-1-24', 'YYYY-MM-DD'),90,TO_DATE('2024-10-23', 'YYYY-MM-DD'), '');
 INSERT INTO tblReSupport (stupk, regdate, extperiod, enddate, memo) VALUES (57,TO_DATE('2024-1-25', 'YYYY-MM-DD'),0,TO_DATE('2024-7-25', 'YYYY-MM-DD'), '');
 
+--select * from tblPosSub;
 INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 FROM tblPosSub), 1, 212);
 INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 FROM tblPosSub), 2, 213);
 INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 FROM tblPosSub), 3, 214);
@@ -7348,7 +7343,7 @@ INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 F
 INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 FROM tblPosSub), 26, 232);
 
 
-
+--select * from tblOnGoingSubject;
 --tblOnGoingSubject
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 1, 7);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 2, 7);
@@ -7357,9 +7352,8 @@ INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(og
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 9, 2);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 10, 2);
 
-
-
 --tblConsulting
+--select * from tblConsulting;
 INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-30', 'YYYY-MM-DD'), '중도포기', 219, 56);
 INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-07-01', 'YYYY-MM-DD'), '중도포기', 219, 59);
 INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-12-12', 'YYYY-MM-DD'), '진로상담', 219, 54);
@@ -7391,7 +7385,7 @@ INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT
 INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-29', 'YYYY-MM-DD'), '중도포기', 228, 75);
 INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-30', 'YYYY-MM-DD'), '중도포기', 228, 82);
 
-
+--select * from tblData;
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), 'JSP (JavaServer Pages) 자료', 'JSP (JavaServer Pages) 수업 자료',TO_DATE('2023-07-08', 'YYYY-MM-DD'),232);
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), 'Node.js 자료', 'Node.js 참고 문헌',TO_DATE('2023-07-08', 'YYYY-MM-DD'),213);
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), '자바 (Java) 자료', '자바 (Java) 수업 자료',TO_DATE('2023-07-09', 'YYYY-MM-DD'),232);
@@ -7940,6 +7934,7 @@ INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELEC
 INSERT INTO tblData (datapk, datatitle, datadetail, regdate, tpk) VALUES ((SELECT NVL(MAX(datapk), 0) + 1 FROM tblData), '오라클 (Oracle) 자료', '오라클 (Oracle) 수업 자료',TO_DATE('2024-03-05', 'YYYY-MM-DD'),224);
 
 --tblTask
+--select * from tblTask;
 INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '''이것이 자바다'' 1-30p 읽어오기', 212);
 INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '자바 온라인 학습 1회차 수강', 215);
 INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '다음 수업 전까지 온라인 학습-UI 흐름 설계 들어오기', 217);
@@ -7948,6 +7943,7 @@ INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 
 INSERT INTO tblTask (taskpk, task, tpk) VALUES ((SELECT NVL(MAX(taskpk), 0) + 1 FROM tblTask), '''김상형의 SQL 정복'' 읽어오기', 218);
 
 --tblTaskSubmit
+--select * from tblTaskSubmit;
 INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '자바의 핵심 원리를 명확하게 이해할 수 있었다.', 1, 6, 1); 
 INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '실용적이고 현실적인 예제를 통해 개념을 이해하는 데 도움이 되었다.', 1, 11, 1); 
 INSERT INTO tblTaskSubmit (tspk, tsanswer, taskpk, stupk, ocpk) VALUES ((SELECT NVL(MAX(tspk), 0) + 1 FROM tblTaskSubmit), '자바 언어의 다양한 기능과 기술에 대한 폭넓은 시야를 얻을 수 있었다.', 1, 14, 1);
