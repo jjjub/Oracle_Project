@@ -1,6 +1,7 @@
 -- &연산자 삽입 가능 설정
 SET ESCAPE ON;
 set define off;
+
 COMMIT;
 
 select * from tblUser;
@@ -1121,7 +1122,7 @@ INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(
 INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), '젠킨스 마스터', '조나단 맥앨리스터', '에이콘출판사');
 INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), '팀 개발을 위한 Git, GitHub 시작하기', '정호영, 진유림', '한빛미디어');
 INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), '빅데이터 분석 도구 R 프로그래밍', '노만 매트로프', '에이콘출판사');
-INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), 'Do it! 스위프트로 아이폰 앱 만들기 입문', '송호정, 이범근', '이지스퍼블리싱');
+INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), 'Do it! 프트로 아이폰 앱 만들기 입문', '송호정, 이범근', '이지스퍼블리싱');
 INSERT INTO tblTextbook (bookpk, tbname, writer, publisher) VALUES ((SELECT NVL(MAX(bookpk), 0) + 1 FROM tblTextbook), '스위프트 데이터 구조와 알고리즘', '에릭 아자르', '에이콘출판사');
 
 --tblSubjectTextbook. INSERT INTO tblSubjectTextbook (subookpk, subpk, bookpk) VALUES ((SELECT NVL(MAX(subookpk), 0) + 1 FROM tblSubjectTextbook), subpk, bookpk);
@@ -1327,6 +1328,7 @@ INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 5, 217, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨2', '2024-02-12', 26, 14, 6, 218, 2);	
 
+select * from tblCourse;
 
 --tblExamInfo
 --1,2 과정
@@ -7395,12 +7397,42 @@ INSERT INTO tblPosSub (pspk, subpk, tpk) VALUES ((SELECT NVL(MAX(pspk), 0) + 1 F
 --select * from tblOnGoingSubject;
 --tblOnGoingSubject
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 1, 7);
-INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 2, 7);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 5, 4);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 6, 4);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 9, 2);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 10, 2);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 1, 2);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 1, 5);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 1, 22);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 5, 6);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 5, 5);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 5, 21);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 6, 2);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 6, 22);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 6, 7);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 9, 17);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 9, 6);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 9, 12);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 10,24);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 10,1);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 10,23);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 13, 3);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 13, 4);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 13, 11);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 13, 25);
 
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 14, 18);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 14, 6);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 14, 5);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 15, 2);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 15, 13);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 15, 26);
+INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 15, 8);
+
+select * from tblOnGoingSubject where crspk = 2;
+select * from tblCourse;
+select * from tblOpenCourse;
+COMMIT;
 --tblConsulting
 --select * from tblConsulting;
 INSERT INTO tblConsulting (cltpk, cltdate, cltdiary, tpk, stupk) VALUES ((SELECT NVL(MAX(cltpk), 0) + 1 FROM tblConsulting), TO_DATE('2022-06-30', 'YYYY-MM-DD'), '중도포기', 219, 56);
