@@ -90,9 +90,8 @@ from tblData d
                 on u.userpk=t.tpk
                 ORDER BY d.datapk ASC;
 
---vwCompany
---기업 조회 / 출력될 정보는 기업명,규모,업종,소재지,산업
-CREATE OR REPLACE VIEW vwCompany AS
+--vwAllCompany(전체 기업 조회)
+CREATE OR REPLACE VIEW vwAllCompany AS
 select 
     c.comname as 기업명,
     s.comsize as 규모,
@@ -100,24 +99,99 @@ select
     l.location as 소재지,
     i.industry as 산업
 from tblCompany c
-    inner join tblComSize s
-        on c.sizepk=s.sizepk
-            inner join tblComCategory ct
-                on c.catepk=ct.catepk
-                    inner join tblComLocation l
-                        on c.locpk=l.locpk
-                            inner join tblComIndustry i
-                                on c.idstpk=i.idstpk
---                                where c.comname='삼성전자'
---                                where s.comsize='대기업'
---                                where ct.category='서비스업'
---                                where l.location='서울특별시'
---                                where i.industry='SI'
-                                ;
+    inner join tblComSize s on c.sizepk=s.sizepk
+    inner join tblComCategory ct on c.catepk=ct.catepk
+    inner join tblComLocation l on c.locpk=l.locpk
+    inner join tblComIndustry i on c.idstpk=i.idstpk
+    order by c.compk asc;
 
---vwTask
+                                
+--vwNameCompany(기업명으로 조회)
+CREATE OR REPLACE VIEW vwNameCompany AS
+select 
+    c.comname as 기업명,
+    s.comsize as 규모,
+    ct.category as 업종,
+    l.location as 소재지,
+    i.industry as 산업
+from tblCompany c
+    inner join tblComSize s on c.sizepk=s.sizepk
+    inner join tblComCategory ct on c.catepk=ct.catepk
+    inner join tblComLocation l on c.locpk=l.locpk
+    inner join tblComIndustry i on c.idstpk=i.idstpk
+    where c.comname='삼성전자'
+    order by c.compk asc;
+    
+
+--vwSizeCompany(규모로 조회)
+CREATE OR REPLACE VIEW vwSizeCompany AS
+select 
+    c.comname as 기업명,
+    s.comsize as 규모,
+    ct.category as 업종,
+    l.location as 소재지,
+    i.industry as 산업
+from tblCompany c
+    inner join tblComSize s on c.sizepk=s.sizepk
+    inner join tblComCategory ct on c.catepk=ct.catepk
+    inner join tblComLocation l on c.locpk=l.locpk
+    inner join tblComIndustry i on c.idstpk=i.idstpk
+    where s.comsize='대기업'
+    order by c.compk asc;
+
+--vwCateCompany(업종으로 조회)
+CREATE OR REPLACE VIEW vwCateCompany AS
+select 
+    c.comname as 기업명,
+    s.comsize as 규모,
+    ct.category as 업종,
+    l.location as 소재지,
+    i.industry as 산업
+from tblCompany c
+    inner join tblComSize s on c.sizepk=s.sizepk
+    inner join tblComCategory ct on c.catepk=ct.catepk
+    inner join tblComLocation l on c.locpk=l.locpk
+    inner join tblComIndustry i on c.idstpk=i.idstpk
+    where ct.category='서비스업'
+    order by c.compk asc;
+            
+--vwLocCompany(소재지로 조회)
+CREATE OR REPLACE VIEW vwLocCompany AS
+select 
+    c.comname as 기업명,
+    s.comsize as 규모,
+    ct.category as 업종,
+    l.location as 소재지,
+    i.industry as 산업
+from tblCompany c
+    inner join tblComSize s on c.sizepk=s.sizepk
+    inner join tblComCategory ct on c.catepk=ct.catepk
+    inner join tblComLocation l on c.locpk=l.locpk
+    inner join tblComIndustry i on c.idstpk=i.idstpk
+    where l.location='서울특별시'
+    order by c.compk asc;
+
+--vwIndCompany(산업으로 조회)
+CREATE OR REPLACE VIEW vwIndCompany AS
+select 
+    c.comname as 기업명,
+    s.comsize as 규모,
+    ct.category as 업종,
+    l.location as 소재지,
+    i.industry as 산업
+from tblCompany c
+    inner join tblComSize s on c.sizepk=s.sizepk
+    inner join tblComCategory ct on c.catepk=ct.catepk
+    inner join tblComLocation l on c.locpk=l.locpk
+    inner join tblComIndustry i on c.idstpk=i.idstpk
+    where i.industry='SI'
+    order by c.compk asc;
+    
+
+
+--vwAllTask
 --과제조회(과제번호,과제내용,교사이름)
-CREATE OR REPLACE VIEW vwTask AS
+CREATE OR REPLACE VIEW vwAllTask AS
 select
     t.taskpk as 과제번호,
     t.task as 내용,
@@ -127,10 +201,21 @@ from tblTask t
         on t.tpk=tc.tpk
             inner join tblUser u
                 on u.userpk=tc.tpk
---                 where t.taskpk =1
---                 where u.name='장서연';
-                    order by t.taskpk asc
-                    ;
+                    order by t.taskpk asc;
+                    
+--vwNumTask                   
+CREATE OR REPLACE VIEW vwNumTask AS
+select
+    t.taskpk as 과제번호,
+    t.task as 내용,
+    u.name as 교사이름
+from tblTask t
+    inner join tblTeacher tc
+        on t.tpk=tc.tpk
+            inner join tblUser u
+                on u.userpk=tc.tpk
+                    where t.taskpk =1
+                    order by t.taskpk asc;
                     
 
 --vwTaskSubmit
@@ -231,4 +316,6 @@ from tblTextBook b
                 on sb.subpk=st.subpk
                 order by sb.subpk asc;
     
+
+
 
