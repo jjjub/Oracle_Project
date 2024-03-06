@@ -117,7 +117,6 @@ REFERENCES tblUser (userpk);
 
 ALTER table tblTeacher ADD CONSTRAINT FK_tblTeacherStatus_TO_tblTeacher FOREIGN KEY (tstspk)
 REFERENCES tblTeacherStatus (tstspk);
-drop tblsize;
 
 --tblStudent.학생정보
 
