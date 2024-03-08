@@ -9,7 +9,7 @@ from tblSubject s
             right outer join tblCourse c
                 on g.crspk = c.crspk
                     right outer join tblOpenCourse o
-                        on c.crspk = o.cospk
+                        on c.crspk = o.crspk
                             left outer join tblClassRoom r
                                 on o.crpk = r.crpk
                                     left outer join tblSubjectTextbook b
@@ -70,6 +70,11 @@ from tblUser u
                                                             on c.stupk = cs.stupk
                                                                 left outer join tblStudentStatus ss
                                                                     on s.stustspk = ss.stustspk;
+
+select * from vwOpenSubject;                                                                
+select * from vwStudentInfo;
+select * from vwStudentStauts;
+
                                                                     
 select * from vwStudentInfo;
 
@@ -320,7 +325,4 @@ from tblTextBook b
                 
 select * from vwSubBook;
     
-
-
-
 
