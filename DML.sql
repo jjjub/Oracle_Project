@@ -1546,21 +1546,7 @@ INSERT INTO tblCourse (crspk, crsname, crsduration)
 INSERT INTO tblCourse (crspk, crsname, crsduration) 
     VALUES ((SELECT NVL(MAX(crspk), 0) + 1 FROM tblCourse), '안정적인 웹 애플리케이션 배포를 위한 CI/CD 교육', 170);
 
---tblOpenCourse
-<<<<<<< HEAD
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'ocname', TO_DATE('YYYY-MM-DD', 'regdate'), field, crspk, crpk, tpk, ocspk);														
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨1', '2024-01-02', 24, 1, 1, 212, 2);	
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨2', '2024-01-02', 30, 1, 2, 215, 2);
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '프론트엔드 웹 애플리케이션 개발자 코스1', '2022-06-27', 20, 5, 1, 219, 3);
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '프론트엔드 웹 애플리케이션 개발자 코스2', '2022-06-27', 20, 5, 3, 228, 3);		
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '빅데이터와 딥러닝 기술 활용을 위한 개발자 양성 과정1', '2023-12-27', 30, 13, 3,  221, 2);
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '빅데이터와 딥러닝 기술 활용을 위한 개발자 양성 과정2', '2023-12-27', 26, 13, 4, 222, 2);
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '모바일 앱 개발 전문가 코스1', '2024-07-02', 30, 15, 1, 213, 1);
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '모바일 앱 개발 전문가 코스2', '2024-07-02', 30, 15, 2, 220, 1);		
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 5, 217, 2);	
-INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨2', '2024-02-12', 26, 14, 6, 218, 2);	
-select * from tblboard;
-=======
+
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'ocname', TO_DATE('YYYY-MM-DD', 'regdate'), field, crspk, crpk, tpk, ocspk);														
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨1', '2024-01-02', 24, 1, 1, 212, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '클라우드 기반 Java 웹 애플리케이션 개발 스쿨2', '2024-01-02', 30, 1, 2, 215, 2);
@@ -1572,7 +1558,7 @@ INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), '모바일 앱 개발 전문가 코스2', '2024-07-02', 30, 15, 2, 220, 1);		
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨1', '2024-02-12', 26, 14, 5, 217, 2);	
 INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, cospk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), 'Full-Stack 웹 애플리케이션 개발자 스쿨2', '2024-02-12', 26, 14, 6, 218, 2);	
->>>>>>> upstream/main
+
 
 select * from tblCourse;
 

@@ -502,7 +502,7 @@ create table tblReSupport (
 ALTER table tblReSupport ADD CONSTRAINT FK_tblEmployedStd_TO_tblReSupport FOREIGN KEY (stupk)
 REFERENCES tblEmployedStd (stupk);
 
-<<<<<<< HEAD
+
 =======
 create table tblBookRecommend (
     br number primary key,
@@ -514,7 +514,7 @@ ALTER table tblBookRecommend ADD CONSTRAINT FK_tblTeacher_TO_tblBookRecommend FO
 REFERENCES tblTeacher (tpk);
 
 
->>>>>>> upstream/main
+
 ----SELECT 'DROP TABLE "' || TABLE_NAME || '" CASCADE CONSTRAINTS;' FROM user_tables;
 
 /*DROP TABLE "TBLCOMSIZE" CASCADE CONSTRAINTS;
