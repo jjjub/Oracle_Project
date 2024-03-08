@@ -85,16 +85,18 @@ create table tblUser (
 	userpk number primary key,
 	role varchar2(10) NOT NULL,
 	name varchar2(10) NOT NULL,
-	bdate date NOT NULL,
-	tel number NOT NULL unique,
+	ssn varchar2(30)NOT NULL,
+	tel varchar2(50) NOT NULL unique,
 	id varchar2(50) NOT NULL unique,
 	pw varchar2(100) NOT NULL, --최초등록시 pw는 주민번호 뒷자리
 	regdate date default sysdate
 );
 ALTER TABLE tblUser ADD CONSTRAINT role_check CHECK (role IN ('관리자','교사','학생'));
+ALTER TABLE tblUser ADD CONSTRAINT ssn_check UNIQUE(ssn);
+ALTER TABLE tblUser MODIFY ssn CONSTRAINT ssn_not_null NOT NULL;
+select * from tblUser;
 
 --tblAdmin.관리자
-
 create table tblAdmin (
  	admpk number primary key,
  	admstspk number default 1 --재직
@@ -226,7 +228,7 @@ create table tblOpenCourse (
 	ocname varchar2(100) NOT NULL, --ex. 과정이름 || (A)
 	regdate date NOT NULL,
 	field number NOT NULL, --인원: 지원자 중 합격자수
-	cospk number NOT NULL,
+	crspk number NOT NULL,
 	crpk number NOT NULL,
 	tpk number NOT NULL,
 	ocspk number default 1
@@ -246,7 +248,7 @@ REFERENCES tblOpenCourseStatus (ocspk);
 --comment ON COLUMN tblOpenCourse.tpk IS '강의과목의강사';
 --comment ON COLUMN tblOpenCourse.ocspk IS 'default:개설예정(1)';
 
-
+desc tblOpencourse;
 --tblRecruit.지원자정보
 
 create table tblRecruit (
@@ -254,10 +256,11 @@ create table tblRecruit (
  	recname varchar2(20) NOT NULL,
  	ssn varchar2(100) NOT NULL,
  	rectel varchar2(50) NOT NULL,
- 	result varchar2(1) NULL, --check(P/F) 대기:null
+ 	result varchar2(10)  DEFAULT '미정' NOT NULL, --check(P/F) 대기:null
  	ocpk number NOT NULL
 );
-ALTER TABLE tblRecruit ADD CONSTRAINT result_check CHECK (result IN ('P', 'F')); 
+ALTER TABLE tblRecruit ADD CONSTRAINT result_check CHECK (result IN ('P', 'F', '미정')); 
+ALTER TABLE tblRecruit MODIFY result VARCHAR2(10) DEFAULT '미정' NOT NULL;
 ALTER table tblRecruit ADD CONSTRAINT FK_tblOpenCourse_TO_tblRecruit FOREIGN KEY (ocpk)
 REFERENCES tblOpenCourse (ocpk);
 
@@ -324,7 +327,7 @@ REFERENCES tblExam (expk);
 create table tblGrade (
  	gradepk number primary key,
  	score number NOT NULL,
- 	stuseq number NOT NULL,
+ 	stupk number NOT NULL,
  	edpk number NOT NULL
 );
 ALTER table tblGrade ADD CONSTRAINT FK_tblStudent_TO_tblGrade FOREIGN KEY (stuseq)
@@ -500,11 +503,9 @@ create table tblReSupport (
 ALTER table tblReSupport ADD CONSTRAINT FK_tblEmployedStd_TO_tblReSupport FOREIGN KEY (stupk)
 REFERENCES tblEmployedStd (stupk);
 
-
-
 ----SELECT 'DROP TABLE "' || TABLE_NAME || '" CASCADE CONSTRAINTS;' FROM user_tables;
 
-DROP TABLE "TBLCOMSIZE" CASCADE CONSTRAINTS;
+/*DROP TABLE "TBLCOMSIZE" CASCADE CONSTRAINTS;
 DROP TABLE "TBLCOMCATEGORY" CASCADE CONSTRAINTS;
 DROP TABLE "TBLCOMINDUSTRY" CASCADE CONSTRAINTS;
 DROP TABLE "TBLCOMLOCATION" CASCADE CONSTRAINTS;
@@ -543,4 +544,4 @@ DROP TABLE "TBLCOMMENT" CASCADE CONSTRAINTS;
 DROP TABLE "TBLCONSULTING" CASCADE CONSTRAINTS;
 DROP TABLE "TBLATTENDANCE" CASCADE CONSTRAINTS;
 DROP TABLE "TBLITRSCOMPANY" CASCADE CONSTRAINTS;
-DROP TABLE "TBLRESUPPORT" CASCADE CONSTRAINTS;
+DROP TABLE "TBLRESUPPORT" CASCADE CONSTRAINTS;*/
