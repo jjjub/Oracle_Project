@@ -484,7 +484,8 @@ END;
 --교육생 이름으로 검색시 그 교육생이 등록한 희망기업의 정보 확인 가능
 
 CREATE OR REPLACE PROCEDURE procItrsCompany (
-    nameIn IN VARCHAR2 DEFAULT NULL
+    userNumIn IN number,
+    comnameIn IN varchar2
 )
 IS
     v_result_cursor SYS_REFCURSOR;
@@ -547,18 +548,6 @@ BEGIN
 EXCEPTION
 --    WHEN v_result_cursor%notfound THEN
 
-END;
-/
-
-
-
-
-BEGIN
-   proc_Checkin(49);
-END;
-/
-
-
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('예외가 발생했습니다: ' || SQLERRM);
 
@@ -572,9 +561,177 @@ BEGIN
 END;
 /
 
-begin
-    procCompany('삼성전자');
-end;
+select * from tblUser;
+select * from tblteacherstatus;
+
+
+----------------------------------------------------
+--procTeacherInsert
+--입력: 역할,이름,아이디,비밀번호,ㅇㅇ,연락처,주민등록번호,(teacher)상태
+--출력: 역할,이름,아이디,비밀번호,등록일,연락처,주민등록번호
+CREATE OR REPLACE PROCEDURE procTeacherInsert (
+    roleIn IN VARCHAR2,
+    nameIn IN VARCHAR2,
+    idIn in varchar2,
+    pwIn in varchar2,
+    regdateIn date default sysdate,
+    telIn in varchar2,
+    ssnIn in varchar2,
+    statusTextIn in varchar2
+)
+IS
+    statuspkIn NUMBER;
+    userpk NUMBER;
+    
+BEGIN
+
+    -- roleIn 값이 '교사'인지 확인
+    IF roleIn != '교사' THEN
+        DBMS_OUTPUT.PUT_LINE('잘못된 역할입니다. 교사 정보만 추가할 수 있습니다.');
+        RETURN; -- 프로시저 종료
+    END IF;
+    
+    --statusTextIn을 번호로 변환
+    BEGIN
+        SELECT tstspk INTO statuspkIn FROM tblTeacherStatus WHERE tstatus = statusTextIn;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('status 텍스트에 대한 번호를 찾을 수 없습니다.');
+    END;
+
+    -- 모든 SELECT 문에서 예외가 발생하지 않았을 때만 INSERT 실행
+   IF statuspkIn IS NOT NULL THEN
+        -- tblUser 테이블에서 userpk 가져오기
+        SELECT NVL(MAX(userpk), 0) + 1 INTO userpk FROM tblUser;
+
+        -- tblUser 테이블에 새로운 레코드 삽입
+        INSERT INTO tblUser (userpk, role, name, id, pw, regdate, tel, ssn)
+        VALUES (userpk, roleIn, nameIn, idIn, pwIn, regdateIn, telIn, ssnIn);
+        
+        -- tblTeacher 테이블에 새로운 레코드 삽입
+        INSERT INTO tblTeacher (tpk, tstspk)
+        VALUES (userpk, statuspkIn);
+        
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 성공적으로 추가했습니다');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 추가하는 동안 오류가 발생했습니다.');
+    END IF;
+EXCEPTION
+    WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 추가하는 동안 오류가 발생했습니다: ' || SQLERRM);
+END procTeacherInsert;
 /
+
+--입력
+BEGIN
+    procTeacherInsert('교사', '시험용', 'test1', '0001000',sysdate,'01088888888','000309-4111111','대기중(재직)');
+END;
+/
+
+
+
+
+
+--procTeacherUpdate
+CREATE OR REPLACE PROCEDURE procTeacherUpdate (
+    userpkIn IN NUMBER,
+    nameIn IN VARCHAR2 ,
+    idIn IN VARCHAR2 ,
+    pwIn IN VARCHAR2 ,
+    telIn IN VARCHAR2 ,
+    statusTextIn IN VARCHAR2
+)
+IS
+    statuspkIn NUMBER;
+    teacherExists NUMBER;
+BEGIN
+    -- statusTextIn을 번호로 변환
+    BEGIN
+        SELECT tstspk INTO statuspkIn FROM tblTeacherStatus WHERE tstatus = statusTextIn;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            DBMS_OUTPUT.PUT_LINE('status 텍스트에 대한 번호를 찾을 수 없습니다.');
+            RETURN; -- 프로시저 종료
+    END;
+
+    -- tblTeacher 테이블에서 주어진 userpk에 해당하는 레코드가 존재하는지 확인
+    SELECT COUNT(*) INTO teacherExists FROM tblTeacher WHERE tpk = userpkIn;
+
+    IF teacherExists > 0 THEN
+        -- tblUser 테이블에서 주어진 userpk에 해당하는 레코드의 이름(name), 아이디(id), 비밀번호(pw), 전화번호(tel)를 업데이트
+        UPDATE tblUser
+        SET name = nameIn,
+            id = idIn,
+            pw = pwIn,
+            tel = telIn
+        WHERE userpk = userpkIn;
+
+        -- tblTeacher 테이블에서 주어진 userpk에 해당하는 레코드의 상태(tstspk)를 업데이트
+        UPDATE tblTeacher
+        SET tstspk = statuspkIn
+        WHERE tpk = userpkIn;
+
+        COMMIT;
+        
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 성공적으로 업데이트했습니다');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('해당 사용자는 교사 테이블에 존재하지 않습니다.');
+    END IF;
+EXCEPTION
+    WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 업데이트하는 동안 오류가 발생했습니다: ' || SQLERRM);
+END procTeacherUpdate;
+/
+
+--입력
+BEGIN
+    procTeacherUpdate(235, '수정용', 'update1', '1234', '01011112222', '휴직');
+END;
+/
+
+select * from tblUser order by userpk asc;
+
+
+--procTeacherDelete
+CREATE OR REPLACE PROCEDURE procTeacherDelete (
+    userpkIn IN NUMBER
+)
+IS
+    teacherExists NUMBER;
+BEGIN
+    -- tblTeacher 테이블에서 주어진 userpk에 해당하는 레코드가 존재하는지 확인
+    SELECT COUNT(*) INTO teacherExists FROM tblTeacher WHERE tpk = userpkIn;
+
+    IF teacherExists > 0 THEN
+        -- tblTeacher 테이블에서 주어진 userpk에 해당하는 레코드를 삭제
+        DELETE FROM tblTeacher WHERE tpk = userpkIn;
+
+        -- tblUser 테이블에서 주어진 userpk에 해당하는 레코드를 삭제
+        DELETE FROM tblUser WHERE userpk = userpkIn;
+
+        COMMIT;
+        
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 성공적으로 삭제했습니다');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('해당 사용자는 교사 테이블에 존재하지 않아 삭제할 수 없습니다.');
+    END IF;
+EXCEPTION
+    WHEN OTHERS THEN
+        ROLLBACK;
+        DBMS_OUTPUT.PUT_LINE('교사 정보를 삭제하는 동안 오류가 발생했습니다: ' || SQLERRM);
+END procTeacherDelete;
+/
+
+--입력
+BEGIN
+    procTeacherDelete(235);
+END;
+
+
+
+
 
 
