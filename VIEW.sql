@@ -239,6 +239,7 @@ from tblTask t
 --                                where u.name = '박원석'
                                 ;
 
+
 --vwCourse
 CREATE OR REPLACE VIEW vwCourse AS
 select 
@@ -315,7 +316,11 @@ from tblTextBook b
             inner join tblSubject sb
                 on sb.subpk=st.subpk
                 order by sb.subpk asc;
+                
+                
+select * from vwSubBook;
     
+
 
 
 
