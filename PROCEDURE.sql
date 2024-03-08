@@ -4,10 +4,11 @@ set serveroutput on;
 
 --프리시저
 --특정 교육생 정보 출력시 교육생 이름, 생년월일 , 주민번호 뒷자리, 전화번호, 등록일, 수강 과정명, 담당 강사,수강상태(수강예정/수강중/수료/중도탈락),상담일지내용을 출력한다
+
 CREATE OR REPLACE PROCEDURE procSearchStudent(
     pname varchar2
 )
-is
+IS
     name tblUser.name%type;
     pssn tblUser.ssn%type;
     ptel tblUser.tel%type;
@@ -16,54 +17,75 @@ is
     pteacher tblUser.name%type;
     pStustatus tblStudentStatus.stustatus%type;
     pcltdiary tblConsulting.cltdiary%type;
-begin
-    select u.name, u.ssn, u.tel, u.Regdate, o.ocname, t.tname, ss.stustatus, cs.cltdiary into name, pssn, ptel, pregdate, pocname, pteacher, pstustatus, pcltdiary 
-        from tblUser u 
-            right outer join 
-            tblStudent s
-                on u.userpk = s.stupk
-                   right outer join 
-                    tblCourseParticipants c
-                        on c.stupk = s.stupk
-                            left outer join
-                                tblOpenCourse o
-                                    on o.ocpk = c.ocpk
-                                        left outer join
-                                            (select u.name as tname, t.tpk from tblUser u left outer join tblTeacher t on u.userpk = t.tpk) t
-                                                on o.tpk = t.tpk
-                                                    left outer join 
-                                                        tblConsulting cs
-                                                            on c.stupk = cs.stupk
-                                                                left outer join 
-                                                                    tblStudentStatus ss
-                                                                        on s.stustspk = ss.stustspk
-                                                                            where name = pname;
-    dbms_output.put_line(' | 이름 |' || '     | 전화번호 |     ' ||'|생년월일|'||'   '||'|주민등록번호 뒷자리|'||'     '  ||'|등록일|'||'                                '|| '| 과정명 |'|| '                             ' ||'|담당교사|' ||'           '|| '| 학생상태 |' || '         | 상담일지내용 |');
-    dbms_output.put_line('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------');
-    dbms_output.put_line(' '||name ||'       '|| ptel ||'       '||substr(pssn, 1, 6)||'           '||substr(pssn, 8, 15)||'             '||pregdate||'                    ' ||pocname ||'        '|| pteacher ||'                '|| pStuStatus ||pcltdiary||'                  ' );
---     name, pbirth, ptel, pregdate, pocname, pteacher, pstustatus, pcltdiary 
-end procSearchStudent;
+    -- 커서 선언
+    CURSOR c_students IS
+        SELECT 
+            u.name, u.ssn, u.tel, u.Regdate, o.ocname, t.tname, ss.stustatus, cs.cltdiary 
+        FROM tblUser u 
+            RIGHT OUTER JOIN tblStudent s 
+                ON u.userpk = s.stupk
+                    RIGHT OUTER JOIN tblCourseParticipants c 
+                        ON c.stupk = s.stupk
+                            LEFT OUTER JOIN tblOpenCourse o ON o.ocpk = c.ocpk
+                                LEFT OUTER JOIN (SELECT u.name AS tname, t.tpk FROM tblUser u LEFT OUTER JOIN tblTeacher t ON u.userpk = t.tpk) t 
+                                    ON o.tpk = t.tpk
+                                        LEFT OUTER JOIN tblConsulting cs 
+                                            ON c.stupk = cs.stupk
+                                                LEFT OUTER JOIN tblStudentStatus ss ON s.stustspk = ss.stustspk
+                                                    WHERE u.name = pname;
+BEGIN
+    -- 커서를 열기 전에 권한 확인
+     dbms_output.put_line(' | 이름 |' || '     | 전화번호 |     ' ||'|생년월일|'||'   '||'|주민등록번호 뒷자리|'||'     '  ||'|등록일|'||'                                '|| '| 과정명 |'|| '                             ' ||'|담당교사|' ||'           '|| '| 학생상태 |' || '         | 상담일지내용 |');
+    FOR student_rec IN c_students LOOP
+        -- 각 열의 값을 변수에 할당
+        name := student_rec.name;
+        pssn := student_rec.ssn;
+        ptel := student_rec.tel;
+        pRegdate := student_rec.Regdate;
+        pocname := student_rec.ocname;
+        pteacher := student_rec.tname;
+        pStustatus := student_rec.STUSTATUS;
+        pcltdiary := student_rec.cltdiary;
+        
+        -- 결과 출력
+       
+        dbms_output.put_line('-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------');
+        dbms_output.put_line(' '||name ||'       '|| ptel ||'       '||substr(pssn, 1, 6)||'           '||substr(pssn, 8, 15)||'             '||pRegdate||'                    ' ||pocname ||'        '|| pteacher ||'                '|| pStustatus ||'                  '||pcltdiary||'                  ' );
+    END LOOP;
+EXCEPTION
+    WHEN OTHERS THEN
+        dbms_output.put_line('에러 발생: ' || SQLERRM);
+END procSearchStudent;
 /
 
+
+
 begin
-     procSearchStudent('백은현');
+     procSearchStudent('백은섭');
 end;
 /
 
+--출결
 CREATE OR REPLACE PROCEDURE proc_Checkin(
     p_stupk IN tblAttendance.stupk%TYPE
+    
 )
 IS
     v_checkin TIMESTAMP;  -- 체크인 시간 변수
     v_attstspk NUMBER;    -- 출석 상태 변수
+    v_checkin_exists number;
 BEGIN
     -- 현재 시간을 체크인 시간으로 설정
+    SELECT count(*) into v_checkin_exists FROM tblAttendance WHERE attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
+    
     v_checkin := SYSTIMESTAMP;
-
+    
+    
+    IF v_checkin_exists = 0 then
     -- 출석 상태 판단
-    IF TO_CHAR(v_checkin, 'HH24:MI:SS') <= '09:10:59' THEN
+    IF TO_CHAR(v_checkin, 'HH24:MI:SS') <= '17:10:59' THEN
         v_attstspk := 1;  -- 출석 완료
-    ELSIF TO_CHAR(v_checkin, 'HH24:MI:SS') BETWEEN '09:11:00' AND '13:00:00' THEN
+    ELSIF TO_CHAR(v_checkin, 'HH24:MI:SS') BETWEEN '17:11:00' AND '18:00:00' THEN
         v_attstspk := 2;  -- 지각
     ELSE
         v_attstspk := 4;  -- 결석처리
@@ -88,14 +110,35 @@ BEGIN
         dbms_output.put_line('결석처리');
     END IF;
     
-    
-    
+    ELSE
+        IF (SYSTIMESTAMP - v_checkin) < INTERVAL '4' HOUR THEN
+            -- 결석
+            v_attstspk := 4;
+            update tblAttendance set checkout = v_checkin where attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
+            update tblAttendance set attstspk = v_attstspk where attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
+        ELSE
+            -- 조퇴
+            v_attstspk := 3;
+            update tblAttendance set checkout = v_checkin where attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
+            update tblAttendance set attstspk = v_attstspk where attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
+        
+
+        END IF;
+    END IF;
 EXCEPTION
     WHEN OTHERS THEN
         dbms_output.put_line('에러 발생: ' || SQLERRM);
 END;
 /
 
+select * from tblAttendstatus;
+select * from tblAttendance order by attpk desc;
+
+
+BEGIN
+    proc_Checkin(131);
+END;
+/
 
 --procCompany
 --기업명,규모,카테고리,주소,분야로 기업 검색
@@ -511,6 +554,7 @@ EXCEPTION
 
 END procItrsCompany;
 /
+
 
 BEGIN
     procItrsCompany('백민근');

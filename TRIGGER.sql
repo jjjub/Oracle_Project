@@ -49,6 +49,28 @@ EXCEPTION
 END;
 /
 
+CREATE OR REPLACE PROCEDURE procChangeCheckOut
+IS
+    v_attpk tblAttendance.attpk%TYPE;
+    v_checkin TIMESTAMP; 
+BEGIN
+    
+    -- 아직 체크아웃이 되지 않은 레코드를 가져옵니다.
+    FOR rec IN (SELECT attpk FROM tblAttendance WHERE checkout IS NULL AND attenddate <> TRUNC(SYSDATE)) LOOP
 
+        v_attpk := rec.attpk; -- attpk 값을 가져옵니다.
 
+        -- 체크아웃 시간 업데이트
+        UPDATE tblAttendance 
+        SET attstspk = 4
+        WHERE attpk = v_attpk;
+        
+    END LOOP;
+
+    dbms_output.put_line('업데이트되었습니다.');
+EXCEPTION
+    WHEN OTHERS THEN
+        dbms_output.put_line('에러 발생: ' || SQLERRM);
+END;
+/
 

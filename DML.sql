@@ -6687,7 +6687,8 @@ INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (86, TO_D
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (87, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '한국전력공사', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (89, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '현대건설', 'Y');
 INSERT INTO tblEmployedStd (stupk, regdate, comname, insurance) VALUES (90, TO_DATE('2023-12-29', 'YYYY-MM-DD'), '기업은행', 'Y');
---select * from tblRecruit;
+
+
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '백은현', '950315-2886781', '01059006133', 'P', 1);
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '백민근', '980720-1214884', '01059055661', 'P', 1);
 INSERT INTO tblRecruit (recpk, recname, ssn, rectel, result, ocpk) VALUES ((SELECT NVL(MAX(recpk), 0) + 1 FROM tblRecruit), '조혜대', '931105-1820652', '01091016321', 'P', 1);
@@ -7660,7 +7661,7 @@ INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(og
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 15, 26);
 INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(ogsubpk), 0) + 1 FROM tblOnGoingSubject), 15, 8);
 
-select * from tblOnGoingSubject where crspk = 2;
+select * from tblUser where userpk = 54;
 select * from tblCourse;
 select * from tblOpenCourse;
 COMMIT;
