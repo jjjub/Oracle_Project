@@ -70,11 +70,11 @@ from tblUser u
                                                             on c.stupk = cs.stupk
                                                                 left outer join tblStudentStatus ss
                                                                     on s.stustspk = ss.stustspk;
-<<<<<<< HEAD
+
 select * from vwOpenSubject;                                                                
 select * from vwStudentInfo;
 select * from vwStudentStauts;
-=======
+
                                                                     
 select * from vwStudentInfo;
 
@@ -244,6 +244,7 @@ from tblTask t
 --                                where u.name = '박원석'
                                 ;
 
+
 --vwCourse
 CREATE OR REPLACE VIEW vwCourse AS
 select 
@@ -320,8 +321,8 @@ from tblTextBook b
             inner join tblSubject sb
                 on sb.subpk=st.subpk
                 order by sb.subpk asc;
+                
+                
+select * from vwSubBook;
     
 
-
-
->>>>>>> upstream/main
