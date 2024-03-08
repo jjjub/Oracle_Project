@@ -118,7 +118,6 @@ REFERENCES tblUser (userpk);
 ALTER table tblTeacher ADD CONSTRAINT FK_tblTeacherStatus_TO_tblTeacher FOREIGN KEY (tstspk)
 REFERENCES tblTeacherStatus (tstspk);
 
-
 --tblStudent.학생정보
 
 create table tblStudent (
@@ -500,6 +499,14 @@ create table tblReSupport (
 ALTER table tblReSupport ADD CONSTRAINT FK_tblEmployedStd_TO_tblReSupport FOREIGN KEY (stupk)
 REFERENCES tblEmployedStd (stupk);
 
+create table tblBookRecommend (
+    br number primary key,
+    regdate date not null,
+    bookname varchar2(100),
+    tpk number not null
+);
+ALTER table tblBookRecommend ADD CONSTRAINT FK_tblTeacher_TO_tblBookRecommend FOREIGN KEY (tpk)
+REFERENCES tblTeacher (tpk);
 
 
 ----SELECT 'DROP TABLE "' || TABLE_NAME || '" CASCADE CONSTRAINTS;' FROM user_tables;
