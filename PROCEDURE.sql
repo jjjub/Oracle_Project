@@ -47,6 +47,7 @@ begin
 end;
 /
 
+--출결
 CREATE OR REPLACE PROCEDURE proc_Checkin(
     p_stupk IN tblAttendance.stupk%TYPE
 )
@@ -56,7 +57,8 @@ IS
 BEGIN
     -- 현재 시간을 체크인 시간으로 설정
     v_checkin := SYSTIMESTAMP;
-
+    
+    IF (select checkin from tblAttendance where 
     -- 출석 상태 판단
     IF TO_CHAR(v_checkin, 'HH24:MI:SS') <= '09:10:59' THEN
         v_attstspk := 1;  -- 출석 완료
