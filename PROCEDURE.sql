@@ -122,7 +122,6 @@ BEGIN
             update tblAttendance set checkout = v_checkin where attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
             update tblAttendance set attstspk = v_attstspk where attenddate = TRUNC(SYSDATE) AND stupk = p_stupk;
         
-
         END IF;
     END IF;
 EXCEPTION
@@ -729,9 +728,71 @@ END procTeacherDelete;
 BEGIN
     procTeacherDelete(235);
 END;
+/
 
+CREATE OR REPLACE PROCEDURE InsertOpencourse(
+    p_crspk IN tblCourse.crspk%TYPE,
+    p_ocname IN tblOpencourse.ocname%TYPE,
+    p_regdate IN tblOpencourse.regdate%TYPE,
+    p_field IN tblOpencourse.field%TYPE,
+    p_crpk IN number,
+    p_tpk IN tblTeacher.tpk%TYPE
+)
+IS
+    pDuration number;
+    pPossibleTeacher number;
+    pTeacherStatus number;
+    pPossibleClassroom number;
+    pClassroomStatus varchar2(3);
+    pSubNum number;
+    pPossibleNum number;
+BEGIN
 
+    select tstspk into pTeacherStatus from tblteacher where tpk = p_tpk; --선생 상태
+    select crsduration into pDuration from tblCourse where crspk = p_crspk; --tblCourse에서 강의시간 뽑아옴
+    select count(*) into pPossibleTeacher from tblOpencourse where p_regdate between p_regdate and  p_regdate + pDuration - 1 and tpk = p_tpk;  --해당 기간 동안 해당 교사의 스케줄 확인
+    select count(*) into pPossibleClassroom from tblOpencourse where p_regdate between p_regdate and  p_regdate + pDuration - 1 and crpk = p_crpk;  --해당 기간 동안 겹치는 교실 수
+    select tblclassroom.crpossible into pClassroomStatus from tblClassroom where crpk= P_crpk; --해당 교실 상태
+    select count(*) into pSubNum from tblongoingsubject where crspk = p_crspk; --해당 과정의 교과목 수(반복문에서 사용)
+    select count(*) into pPossibleNum from tblOngoingsubject o inner join tblPosSub p on o.subpk = p.subpk and p.tpk = p_tpk and o.crspk = p_crspk inner join tblSubject s on s.essential = 'Y' and s.subpk = o.subpk; --교사가능 과목과 해당 과정 교과목 비교 수
 
+    IF pPossibleTeacher > 0 and  pTeacherStatus <> 3 THEN
+    dbms_output.put_line('해당 교사는 불가능합니다.');
+    
+    ELSIF pPossibleClassroom > 0 and pClassroomStatus <> 'Y' THEN
+    dbms_output.put_line('해당 교실은 사용 불가능합니다.');
+    
+    ELSIF pSubNum >  pPossibleNum THEN
+    dbms_output.put_line('교사 능력 부족');
+    
+    ELSE
+        INSERT INTO tblOpenCourse (ocpk, ocname, regdate, field, crspk, crpk, tpk, ocspk) VALUES ((SELECT NVL(MAX(ocpk), 0) + 1 FROM tblOpenCourse), p_ocname, p_regdate, p_field, p_crspk, p_crpk, p_tpk, 1);	
+    END IF;  
+END;
+/
 
+begin
+     InsertOpencourse(1, '테스트', '2024-01-02', 20, 2, 212);
+end;
+/
 
+INSERT INTO tblGrade (gradepk, score, stupk, edpk) VALUES ((SELECT NVL(MAX(gradepk), 0) + 1 FROM tblGrade),10,1,1);
+select * from vwExamByStu order by 학생번호 desc;
+select * from tblopencourse;
+CREATE OR REPLACE TRIGGER trgChangeCRStatus
+AFTER UPDATE OF ocspk ON tblOpencourse
+FOR EACH ROW
+DECLARE
+    vTeacher number;
+BEGIN
+
+    IF :NEW.ocspk = 3 THEN
+        SELECT tpk INTO vTeacher FROM tblTeacher WHERE tpk = :NEW.tpk;
+
+        UPDATE tblClassroom SET crpossible = 'Y' WHERE crpk = :NEW.crpk;
+
+        UPDATE tblTeacher SET tstspk = 3 WHERE tpk = vTeacher;
+    END IF;
+END;
+/
 
