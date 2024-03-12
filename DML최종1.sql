@@ -193,10 +193,10 @@ INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk)
 INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '크리스마스', TO_DATE('20231225','YYYY-MM-DD'));
 --2024년 휴일
 INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '신정', TO_DATE('20240101','YYYY-MM-DD'));
-INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설연휴', TO_DATE('20240109','YYYY-MM-DD'));
-INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설연휴', TO_DATE('20240110','YYYY-MM-DD'));
-INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설연휴', TO_DATE('20240111','YYYY-MM-DD'));
-INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설(대체)', TO_DATE('20240112','YYYY-MM-DD'));
+INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설연휴', TO_DATE('20240209','YYYY-MM-DD'));
+INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설연휴', TO_DATE('20240210','YYYY-MM-DD'));
+INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설연휴', TO_DATE('20240211','YYYY-MM-DD'));
+INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '설(대체)', TO_DATE('20240212','YYYY-MM-DD'));
 INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '삼일절', TO_DATE('20240301','YYYY-MM-DD'));
 INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '22대 국회의원 선거', TO_DATE('20240410','YYYY-MM-DD'));
 INSERT INTO tblHoliday (holpk, holiday, holidate) VALUES ((SELECT NVL(MAX(holpk), 0) + 1 FROM tblHoliday), '근로자의날', TO_DATE('20240501','YYYY-MM-DD'));
