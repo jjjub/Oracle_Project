@@ -629,38 +629,38 @@ INSERT INTO tblOnGoingSubject (ogsubpk, crspk, subpk) VALUES ((SELECT NVL(MAX(og
 
 
 --관리자
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),499) + 1 FROM tblUser where role = '관리자'),'관리자','최하혜','820626-1257533', '01045752943', 'lsivkf45','1366099',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','문시찬','801122-1755251', '01025660607', 'nwriwy90','2353192',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','김준혁','820225-2433611', '01072976144', 'bzhgcn97','1621082',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','윤정훈','840820-2582714', '01007653933', 'rkhkhs41','2983491',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','한수훈','810205-2451255', '01093051638', 'ehnjtb36','2881181',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','장다준','850306-2619554', '01099068989', 'rjhxgc23','2481786',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','전태현','860204-2786246', '01045772322', 'prgtvo86','2584984',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','권정석','780604-2421371', '01003270205', 'exkgiu66','1224021',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','문경석','820126-2865939', '01070737817', 'hexjll97','2041258',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),499) + 1 FROM tblUser where role = '관리자'),'관리자','최하혜','820626-1257533', '01045752943', 'lsivkf45','1257533',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','문시찬','801122-1755251', '01025660607', 'nwriwy90','1755251',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','김준혁','820225-2433611', '01072976144', 'bzhgcn97','2433611',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','윤정훈','840820-2582714', '01007653933', 'rkhkhs41','2582714',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','한수훈','810205-2451255', '01093051638', 'ehnjtb36','2451255',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','장다준','850306-2619554', '01099068989', 'rjhxgc23','2619554',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','전태현','860204-2786246', '01045772322', 'prgtvo86','2786246',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','권정석','780604-2421371', '01003270205', 'exkgiu66','2421371',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '관리자'),'관리자','문경석','820126-2865939', '01070737817', 'hexjll97','2865939',SYSDATE );	
 																
 --교사													
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),211) + 1 FROM tblUser where role = '교사'),'교사','장서연','860127-1179774', '01062013305', 'owpibx9','2457061',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','강준연','820226-1228162', '01097440696', 'heskyt14','2055876',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','조수훈','870909-2760662', '01043031067', 'xehnjc50','2422393',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','김원훈','860724-2365681', '01090296392', 'wgsjvd60','2148858',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','양명원','811212-1758762', '01020156022', 'aucykn55','1735084',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','윤지민','840227-1036273', '01041485871', 'yvxxbu1','2734271',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','고지윤','870306-2530115', '01001822087', 'hzisww21','2732636',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','정원혁','851229-2412922', '01010494562', 'wrgqbi26','2216061',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','최하혜','830313-1956534', '01088227286', 'ltwnju20','2947385',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','문수석','850104-2751110', '01013875886', 'edkntt29','1719536',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','장지연','851029-2519653', '01059065589', 'eejjq122','1731547',SYSDATE );	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES  ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','고경원','760601-1366099','01096578452','minji_90','2161254',SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','양시혜','800514-1621082','01096995214','swpark87','1195236',SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','문민윤','731001-2983491','01013256487','jiwonlee92','2154568',SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','윤준훈','650227-2881181','01036987412','jaehyun_85','1184623',SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate)  VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','임하석','791117-1224021','01041258746','jisoo_hong', '1180245',SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','정원훈','720521-2457061','01054321987', 'hyunwoo_j', '1198712', SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','권태윤','781220-2055876','01021556321', 'young_tae', '1025465', SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','한하민','720521-2148858','01084651357', 'real_water', '1162656', SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','이다우','720521-1735084','01079642164', 'si_rain', '1170858', SYSDATE);	
-INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','권다혜','720521-2216061','01011324456', 'kind_jun', '1032654', SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),211) + 1 FROM tblUser where role = '교사'),'교사','장서연','860127-1179774', '01062013305', 'owpibx9','1179774',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','강준연','820226-1228162', '01097440696', 'heskyt14','1228162',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','조수훈','870909-2760662', '01043031067', 'xehnjc50','2760662',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','김원훈','860724-2365681', '01090296392', 'wgsjvd60','2365681',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','양명원','811212-1758762', '01020156022', 'aucykn55','1758762',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','윤지민','840227-1036273', '01041485871', 'yvxxbu1','1036273',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','고지윤','870306-2530115', '01001822087', 'hzisww21','2530115',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','정원혁','851229-2412922', '01010494562', 'wrgqbi26','2412922',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','최하혜','830313-1956534', '01088227286', 'ltwnju20','1956534',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','문수석','850104-2751110', '01013875886', 'edkntt29','2751110',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','장지연','851029-2519653', '01059065589', 'eejjq122','2519653',SYSDATE );	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES  ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','고경원','760601-1366099','01096578452','minji_90','1366099',SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','양시혜','800514-1621082','01096995214','swpark87','1621082',SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','문민윤','731001-2983491','01013256487','jiwonlee92','2983491',SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','윤준훈','650227-2881181','01036987412','jaehyun_85','2881181',SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate)  VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','임하석','791117-1224021','01041258746','jisoo_hong','1224021',SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','정원훈','720521-2457061','01054321987', 'hyunwoo_j','2457061', SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','권태윤','781220-2055876','01021556321', 'young_tae','2055876', SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','한하민','720521-2148858','01084651357', 'real_water','2148858', SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','이다우','720521-1735084','01079642164', 'si_rain', '1735084', SYSDATE);	
+INSERT INTO tblUser (userpk,role,name,ssn,tel,id,pw,regdate) VALUES ((SELECT NVL(MAX(userpk),0) + 1 FROM tblUser where role = '교사'),'교사','권다혜','720521-2216061','01011324456', 'kind_jun', '2216061', SYSDATE);	
 
 
 --tblTeacher
